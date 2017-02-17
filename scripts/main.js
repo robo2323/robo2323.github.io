@@ -1,6 +1,4 @@
-window.addEventListener('load',
-
-    function() {
+$( document ).ready(function() {
 
         var $sectionAboutOffset = $("#about").offset().top,
             $sectionPortfolioOffset = $("#portfolio").offset().top,
@@ -86,7 +84,8 @@ window.addEventListener('load',
             }
         });
 
-    }, false);
+});
+
 
 
 
