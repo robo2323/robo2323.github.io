@@ -1,0 +1,158 @@
+.nav-active {
+  font-size: 1.2vw;
+  color: #ffffff;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  transition: all .3s ease;
+}
+a {
+  transition: all .3s ease;
+  color: #3AB76D;
+}
+a:hover {
+  color: #3ab76d;
+}
+a:active {
+  text-shadow: 0 0 0;
+}
+hr {
+  max-width: 80px;
+  margin: 40px auto;
+}
+nav {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  background: rgba(34, 34, 34, 0.1);
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+nav a {
+  display: block;
+  color: #dcdcdc;
+  text-align: center;
+  padding: 16px 16px 16px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  font-size: 1.2vw;
+  color: #ffffff;
+}
+.navbar-name {
+  float: left;
+  position: absolute;
+  vertical-align: middle;
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+.navbar-name i {
+  visibility: hidden;
+}
+.navbar-name:hover i,
+.navbar-name:focus {
+  color: tomato;
+}
+.navbar-nav {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+}
+.navbar-nav ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar-nav li {
+  float: left;
+}
+header,
+section,
+footer {
+  width: 100%;
+  min-height: 100%;
+  padding: 30px 0;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #fff;
+}
+header div,
+section div,
+footer div {
+  margin-top: 10%;
+}
+header h1,
+section h1,
+footer h1 {
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 5vw;
+  font-weight: 700;
+}
+header {
+  height: 100%;
+  background-position: center;
+  background-image: url('http://oi68.tinypic.com/2qm2cgk.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+header i {
+  margin: 10vh auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+}
+.margin-bottom {
+  margin-bottom: 80px;
+}
+.light {
+  background: #3AB76D;
+}
+.alt {
+  background: #3881A1;
+}
+.dark {
+  background: #222;
+}
+footer {
+  color: #fff;
+  font-size: 20px;
+}
+.button {
+  font-family: 'Libre Franklin', sans-serif;
+  text-decoration: none;
+  border: 3px solid #3AB76D;
+  color: #fff;
+  margin: 50px 5px 10px 5px;
+  border-radius: 300px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px black;
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+}
+.button:hover {
+  background-color: #3AB76D;
+  color: #fff;
+}
+.a-contact {
+  color: #fff;
+  text-shadow: 3px 3px 2px #111;
+  transition: all 0.4s ease-in-out;
+}
+.a-contact:active {
+  text-shadow: 0 0 0;
+}
