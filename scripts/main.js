@@ -1,5 +1,3 @@
-$( window ).on( "load", function() {
-
 $( document ).ready(function() {
 
         var $sectionAboutOffset = $("#about").offset().top,
@@ -86,7 +84,6 @@ $( document ).ready(function() {
             }
         });
 
-});
 });
 
 
