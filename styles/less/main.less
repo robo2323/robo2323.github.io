@@ -5,7 +5,12 @@
 sans-serif;
 
 @a-font-size-lg: 1vw;
-@-font-size-md: 2vw;
+@-font-size-md: 2.6vw;
+
+@padding-nav-a-large: 16px 30px 16px 30px;
+
+@padding-nav-a-medium: 16px 15px 16px 15px;
+
 
 @mq-medium: ~"only screen and (max-width: 950px)";
 
@@ -73,10 +78,14 @@ nav {
   text-transform: uppercase;
   .transition-long;
   .navbar-nav {
+
     a {
       display: block;
       text-align: center;
-      padding: 16px 20px 16px 20px;
+      padding: @padding-nav-a-large;
+      @media @mq-medium{
+        padding: @padding-nav-a-medium;
+      }
       text-decoration: none;
       .trasnsition-short;
       color: rgb(220, 220, 220);
