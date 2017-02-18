@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5cd38ed-313d-4d9a-9c2c-3b59bed87a04" name="Default" comment="">
+    <list default="true" id="e5cd38ed-313d-4d9a-9c2c-3b59bed87a04" name="Default" comment="got rid of nav labels">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/less/main.css" afterPath="$PROJECT_DIR$/styles/less/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/less/main.less" afterPath="$PROJECT_DIR$/styles/less/main.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,19 +27,32 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="40" column="85" lean-forward="false" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+                <state relative-caret-position="136">
+                  <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/less/main.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="563">
-                  <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+                <state relative-caret-position="597">
+                  <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/styles/less/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1487388917421" expanded="true" signature="178:182" ph="{...}" />
+                    <marker date="1487388917421" expanded="true" signature="2781:2809" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -77,10 +91,10 @@
       <list>
         <option value="$PROJECT_DIR$/styles/css/reset.css" />
         <option value="$PROJECT_DIR$/styles/css/styles.css" />
-        <option value="$PROJECT_DIR$/styles/less/main.css" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/less/main.less" />
+        <option value="$PROJECT_DIR$/styles/less/main.css" />
       </list>
     </option>
   </component>
@@ -121,6 +135,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="robo2323.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robo2323.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robo2323.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main.less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -202,7 +238,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487294264155</updated>
-      <workItem from="1487294266234" duration="26576000" />
+      <workItem from="1487294266234" duration="26843000" />
     </task>
     <task id="LOCAL-00001" summary="scripts position">
       <created>1487296985152</created>
@@ -372,11 +408,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487388573942</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="got rid of nav labels">
+      <created>1487388652921</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1487388652921</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26576000" />
+    <option name="totallyTimeSpent" value="26843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,7 +435,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10245464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10245464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -455,20 +498,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/less/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="105" column="1" lean-forward="false" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-          <folding>
-            <marker date="1487388627889" expanded="true" signature="12:53" ph="{...}" />
-            <marker date="1487388627889" expanded="true" signature="83:175" ph="{...}" />
-            <marker date="1487388627889" expanded="true" signature="178:182" ph="{...}" />
-            <marker date="1487388627889" expanded="true" signature="2781:2809" ph="{...}" />
-            <marker date="1487388627889" expanded="true" signature="2828:2853" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -479,17 +508,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="40" column="85" lean-forward="false" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+        <state relative-caret-position="136">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state relative-caret-position="597">
+          <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/less/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487388917421" expanded="true" signature="178:182" ph="{...}" />
+            <marker date="1487388917421" expanded="true" signature="2781:2809" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
