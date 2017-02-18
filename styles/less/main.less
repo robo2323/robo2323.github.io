@@ -1,10 +1,19 @@
 @color-light: #3AB76D;
-@color-alt: #3881A1;
+@color-alt: #FE7251;
 @color-dark: #222;
 @font-alt: 'Libre Franklin',
 sans-serif;
 .sans-serif-font() {
   font-family: @font-alt;
+}
+
+.trasnsition-short(){
+  transition: all .2s ease-in-out;
+}
+
+.transition-long(){
+  transition: all .4s ease-in-out;
+
 }
 
 .nav-active {
@@ -24,19 +33,12 @@ body {
   height: 100%;
   width: 100%;
   font-family: @font-alt;
-  transition: all .3s ease;
+  //transition: all .2s ease;
 }
 
 a {
-  transition: all .3s ease;
-  color: @color-light;
-  &:hover {
-    color: lighten(@color-light, 0%);
-  }
-  &:focus {}
-  &:active {
-    text-shadow: 0 0 0;
-  }
+  .trasnsition-short;
+
 }
 
 hr {
@@ -53,17 +55,29 @@ nav {
   font-weight: 700;
   font-size: 1vw;
   text-transform: uppercase;
-  transition: all .3s ease;
-  a {
-    display: block;
-    color: rgb(220, 220, 220);
-    text-align: center;
-    padding: 16px 16px 16px 16px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    &:hover {
-      font-size: 1.2vw;
-      color: rgb(255, 255, 255);
+  .transition-long;
+  .navbar-nav {
+    a {
+      display: block;
+      //color: rgb(220, 220, 220);
+      text-align: center;
+      padding: 16px 16px 16px 16px;
+      text-decoration: none;
+      .trasnsition-short;
+      color: rgb(220, 220, 220);
+      &:hover {
+        color: rgb(255, 255, 255);
+      }
+      &:hover i {
+        color: @color-light;
+        font-size: 2.5em;
+
+      }
+      &:focus {
+      }
+      &:active {
+        text-shadow: 0 0 0;
+      }
     }
   }
 }
@@ -71,15 +85,20 @@ nav {
 .navbar-name {
   float: left;
   position: absolute;
-  vertical-align: middle;
+  top: 50%;
   font-size: 1.2vw;
   font-weight: 700;
+  padding: 0;
   i {
     visibility: hidden;
+    color: #fff;
   }
   &:hover i,
-  &:focus {
-    color: tomato;
+  &:focus i {
+    color: @color-light;
+  }
+  &:focus i{
+    box-shadow: none;
   }
 }
 
@@ -119,9 +138,23 @@ footer {
 header {
   height: 100%;
   background-position: center;
-  background-image: url('http://oi68.tinypic.com/2qm2cgk.jpg');
+  background-image: url(../../img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
+  a{
+    i{
+      .trasnsition-short;
+    }
+    &:hover i, &:focus i{
+
+      color: @color-dark;
+    }
+    &:focus i{
+
+        box-shadow: none;
+
+    }
+  }
   i {
     margin: 10vh auto;
   }
@@ -171,8 +204,7 @@ footer {
   padding: 15px 30px;
   text-transform: uppercase;
   box-shadow: 0 2px 5px black;
-  transition: all 0.3s ease;
-  flex: 0 0 auto;
+  .trasnsition-short;  flex: 0 0 auto;
   &:hover {
     background-color: @color-light;
     color: #fff;
@@ -182,8 +214,13 @@ footer {
 .a-contact {
   color: #fff;
   text-shadow: 3px 3px 2px #111;
-  transition: all .4s ease-in-out;
+  .trasnsition-short;
+  text-decoration: none;
   &:active {
     text-shadow: 0 0 0;
+  }
+  &:hover {
+    color: @color-light;
+
   }
 }

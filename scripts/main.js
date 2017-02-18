@@ -4,32 +4,38 @@ $( document ).ready(function() {
             $sectionPortfolioOffset = $("#portfolio").offset().top,
             $sectionContactOffset = $("#contact").offset().top,
             $navHeight = $('.navbar').height();
-        $('.navbar-name').css('line-height', $navHeight + 'px');
+        //$('.navbar-name i').css('line-height', $navHeight + 10 + 'px');
 
-        console.log(document.getElementById("about").offsetHeight, document.getElementById("about").offsetTop );
-        $('nav').hover(
+        $('.navbar-nav').hover(
             function () {
 
-                $(this).css("margin-top", "0");
+                $('nav').css("margin-top", "0");
+                $('.navbar-name').css('top', '25%');
+
             }, function () {
                 if ($(window).scrollTop() > 0)
-                    $(this).css("margin-top", "-2.5%");
+                    $('nav').css("margin-top", "-2.5%");
+                $('.navbar-name').css('top', '50%');
+
             }
         );
 
         $(window).resize(function () {
             $navHeight = $('.navbar').height();
-            $('.navbar-name').css('line-height', $navHeight + 'px');
+            //$('.navbar-name').css('line-height', $navHeight + 'px');
         });
 
 
         $('a.page-scroll').bind('click', function (event) {
-            $navHeight = $navHeight - $(window).height() * 0.025;
-
             var $anchor = $(this);
+            if($anchor.attr('href')!="page-top") {
+                var $offset = $navHeight - $(window).height() * 0.04;
+            }else{
+                var $offset = 0;
+            }
 
             $('html, body').stop().animate({
-                scrollTop: ($($anchor.attr('href')).offset().top - $navHeight)
+                scrollTop: ($($anchor.attr('href')).offset().top - $offset)
             }, 1000, 'easeInOutExpo');
             event.preventDefault();
         });
@@ -39,15 +45,6 @@ $( document ).ready(function() {
         $(window).scroll(function () {
 
             var $scrollPos = $(window).scrollTop();
-//if($scrollPos > $oldScrollPos){
-            //$("nav").css('top', '-5%');
-            //$oldScrollPos = $scrollPos;
-            //}else if($scrollPos < $oldScrollPos){
-            //   $("nav").css('top', '0');
-            //  $oldScrollPos = $scrollPos;
-
-
-            //}
 
             if ($scrollPos < 10) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 0.1)");
@@ -68,6 +65,7 @@ $( document ).ready(function() {
                 $("[href]").removeClass('nav-active');
                 $("[href='#contact']").addClass('nav-active');
                 $("nav").css("background-color", "#3AB76D");
+                $("")
 
             }
             if ($scrollPos < $sectionAboutOffset - $navHeight) {
