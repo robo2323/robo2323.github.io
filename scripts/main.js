@@ -5,10 +5,12 @@ $( document ).ready(function() {
         $sectionContactOffset = $("#contact").offset().top,
         $navHeight = $('.navbar').height();
 
+    $("nav a").addClass('nav-a-style-normal');
 
 
 
-        //window resize handler
+
+    //window resize handler
         $(window).resize(function () {
             //recalculate navbar height for scrolling function
             $navHeight = $('.navbar').height();
@@ -48,13 +50,20 @@ $( document ).ready(function() {
             }
             if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 1)");
+                $("nav a").removeClass('nav-a-style-alt');
+
 
 
             }
             if ($scrollPos > ($sectionContactOffset - $navHeight - 1)) {
                 $("[href]").removeClass('nav-active');
+
+
                 $("[href='#contact']").addClass('nav-active');
                 $("nav").css("background-color", "#3AB76D");
+
+                $("nav a").addClass('nav-a-style-alt');
+
 
             }
             if ($scrollPos < $sectionAboutOffset - $navHeight) {

@@ -1,3 +1,13 @@
+.nav-a-style-normal:hover i,
+.nav-a-style-normal:focus i {
+  color: #3AB76D;
+  font-size: 2.6em;
+}
+.nav-a-style-alt:hover i,
+.nav-a-style-alt:focus i {
+  color: #222;
+  font-size: 2.6em;
+}
 .nav-active {
   color: #ffffff;
 }
@@ -60,10 +70,6 @@ nav .navbar-nav a {
 nav .navbar-nav a:hover {
   color: #ffffff;
 }
-nav .navbar-nav a:hover i {
-  color: #3AB76D;
-  font-size: 2.6em;
-}
 .navbar-name {
   float: left;
   font-size: 1.25vw;
@@ -83,10 +89,6 @@ nav .navbar-nav a:hover i {
 .navbar-name i {
   visibility: hidden;
   color: #fff;
-}
-.navbar-name:hover i,
-.navbar-name:focus i {
-  color: #FE7251;
 }
 .navbar-name:focus i {
   box-shadow: none;
