@@ -66,8 +66,19 @@ nav .navbar-nav a:hover i {
 }
 .navbar-name {
   float: left;
+  font-size: 1.25vw;
   font-weight: 700;
   padding: 10px;
+}
+@media only screen and (max-width: 950px) and (min-width: 461px) {
+  .navbar-name {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .navbar-name {
+    font-size: 4vw;
+  }
 }
 .navbar-name i {
   visibility: hidden;
