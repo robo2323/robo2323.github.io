@@ -10,7 +10,7 @@ $( document ).ready(function() {
             if ( $winWidth > 950) {
                 $navCollapseOffset = "-2.5%";
             } else if ($winWidth < 951 && $winWidth > 380) {
-                $navCollapseOffset = "-5%";
+                $navCollapseOffset = "-4%";
             }else if($winWidth < 381){
                 $navCollapseOffset = "-5%";
 
