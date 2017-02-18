@@ -38,12 +38,10 @@ nav .navbar-nav a {
 nav .navbar-nav a:hover {
   color: #ffffff;
 }
-nav .navbar-nav a:hover i {
+nav .navbar-nav a:hover i,
+nav .navbar-nav a:active i {
   color: #3AB76D;
   font-size: 2.5em;
-}
-nav .navbar-nav a:active {
-  text-shadow: 0 0 0;
 }
 .navbar-name {
   float: left;

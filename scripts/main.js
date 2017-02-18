@@ -4,8 +4,8 @@ $( document ).ready(function() {
             $sectionPortfolioOffset = $("#portfolio").offset().top,
             $sectionContactOffset = $("#contact").offset().top,
             $navHeight = $('.navbar').height();
-        //$('.navbar-name i').css('line-height', $navHeight + 10 + 'px');
 
+        //show navbar labels on hover
         $('.navbar-nav').hover(
             function () {
 
@@ -20,14 +20,17 @@ $( document ).ready(function() {
             }
         );
 
+        //window resize handler
         $(window).resize(function () {
+            //recalculate navbar height for scrolling function
             $navHeight = $('.navbar').height();
-            //$('.navbar-name').css('line-height', $navHeight + 'px');
         });
 
 
+        //page scroll on nav clicks
         $('a.page-scroll').bind('click', function (event) {
             var $anchor = $(this);
+            //set
             if($anchor.attr('href')!="page-top") {
                 var $offset = $navHeight - $(window).height() * 0.04;
             }else{
