@@ -43,9 +43,6 @@ nav .navbar-nav a {
   transition: all 0.2s ease-in-out;
   color: #dcdcdc;
 }
-nav .navbar-nav a p {
-  display: block;
-}
 nav .navbar-nav a:hover {
   color: #ffffff;
 }
@@ -55,11 +52,9 @@ nav .navbar-nav a:hover i {
 }
 .navbar-name {
   float: left;
-  position: absolute;
-  top: 50%;
   font-size: 1.2vw;
   font-weight: 700;
-  padding: 0;
+  padding: 10px;
 }
 .navbar-name i {
   visibility: hidden;
@@ -67,7 +62,7 @@ nav .navbar-nav a:hover i {
 }
 .navbar-name:hover i,
 .navbar-name:focus i {
-  color: #3AB76D;
+  color: #FE7251;
 }
 .navbar-name:focus i {
   box-shadow: none;
@@ -120,7 +115,7 @@ header a i {
 }
 header a:hover i,
 header a:focus i {
-  color: #222;
+  color: #3AB76D;
 }
 header a:focus i {
   box-shadow: none;

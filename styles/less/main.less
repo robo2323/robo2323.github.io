@@ -81,9 +81,6 @@ nav {
       text-decoration: none;
       .trasnsition-short;
       color: rgb(220, 220, 220);
-      p{
-        display: block;
-      }
       i{
       }
       &:hover {
@@ -100,18 +97,16 @@ nav {
 
 .navbar-name {
   float: left;
-  position: absolute;
-  top: 50%;
   font-size: 1.2vw;
   font-weight: 700;
-  padding: 0;
+  padding: 10px;
   i {
     visibility: hidden;
     color: #fff;
   }
   &:hover i,
   &:focus i {
-    color: @color-light;
+    color: @color-alt;
   }
   &:focus i{
     box-shadow: none;
@@ -163,7 +158,7 @@ header {
     }
     &:hover i, &:focus i{
 
-      color: @color-dark;
+      color: @color-light;
     }
     &:focus i{
 
