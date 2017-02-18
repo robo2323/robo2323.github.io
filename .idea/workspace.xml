@@ -38,7 +38,7 @@
             <entry file="file://$PROJECT_DIR$/styles/less/main.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
-                  <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                  <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -225,7 +225,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487294264155</updated>
-      <workItem from="1487294266234" duration="28258000" />
+      <workItem from="1487294266234" duration="28343000" />
     </task>
     <task id="LOCAL-00001" summary="scripts position">
       <created>1487296985152</created>
@@ -430,11 +430,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487390315329</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update css">
+      <created>1487390344084</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1487390344084</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28258000" />
+    <option name="totallyTimeSpent" value="28343000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,7 +548,7 @@
     <entry file="file://$PROJECT_DIR$/styles/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -31,7 +31,7 @@ nav {
 }
 @media only screen and (max-width: 950px) {
   nav {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 nav .navbar-nav a {
