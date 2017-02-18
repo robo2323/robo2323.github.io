@@ -139,7 +139,7 @@ header a i {
 }
 header a:hover i,
 header a:focus i {
-  color: #3AB76D;
+  color: #222;
 }
 header a:focus i {
   box-shadow: none;
