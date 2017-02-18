@@ -4,15 +4,17 @@
 @font-alt: 'Libre Franklin',
 sans-serif;
 
-@a-font-size-lg: 1vw;
-@-font-size-md: 3.5vw;
+@a-font-size-lg: 1.25vw;
+@a-font-size-md: 2.5vw;
+@a-font-size-sml: 4vw;
 
 @padding-nav-a-large: 16px 30px 16px 30px;
-
 @padding-nav-a-medium: 16px 15px 16px 15px;
+@padding-nav-a-small: 16px 10px 10px 15px;
 
 
-@mq-medium: ~"only screen and (max-width: 950px)";
+@mq-medium: ~"only screen and (max-width: 950px) and (min-width: 461px)";
+@mq-small: ~"only screen and (max-width: 460px)";
 
 
 .sans-serif-font() {
@@ -73,7 +75,10 @@ nav {
   font-weight: 700;
   font-size: @a-font-size-lg;
   @media @mq-medium {
-    font-size: @-font-size-md;
+    font-size: @a-font-size-md;
+  }
+  @media @mq-small{
+    font-size: @a-font-size-sml;
   }
   text-transform: uppercase;
   .transition-long;
@@ -85,6 +90,9 @@ nav {
       padding: @padding-nav-a-large;
       @media @mq-medium{
         padding: @padding-nav-a-medium;
+      }
+      @media @mq-small{
+        padding: @padding-nav-a-small;
       }
       text-decoration: none;
       .trasnsition-short;
