@@ -6,10 +6,14 @@ $( document ).ready(function() {
         $navHeight = $('.navbar').height();
 
     function setNavCollapseOffset() {
-            if ($(window).width() > 950) {
+        var $winWidth = $(window).width();
+            if ( $winWidth > 950) {
                 $navCollapseOffset = "-2.5%";
-            } else if ($(window).width() < 951) {
-                $navCollapseOffset = "-10%";
+            } else if ($winWidth < 951 && $winWidth > 380) {
+                $navCollapseOffset = "-5%";
+            }else if($winWidth < 381){
+                $navCollapseOffset = "-7%";
+
             }
         }
 
@@ -21,11 +25,14 @@ $( document ).ready(function() {
 
                 $('nav').css("margin-top", "0");
                 $('.navbar-name').css('top', '25%');
+                $(".navbar-nav a").css('visibility', 'visible');
 
             }, function () {
-                if ($(window).scrollTop() > 0)
+                if ($(window).scrollTop() > 0) {
                     $('nav').css("margin-top", $navCollapseOffset);
-                $('.navbar-name').css('top', '50%');
+                    $('.navbar-name').css('top', '50%');
+                    $(".navbar-nav a").css('visibility', 'hidden');
+                }
 
             }
         );
@@ -36,6 +43,8 @@ $( document ).ready(function() {
             $navHeight = $('.navbar').height();
             setNavCollapseOffset();
             $('nav').css("margin-top", "0");
+            $(".navbar-nav a").css('visibility', 'visible');
+
 
         });
 
@@ -65,6 +74,7 @@ $( document ).ready(function() {
             if ($scrollPos < 10) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 0.1)");
                 $("nav").css("margin-top", "0");
+                $(".navbar-nav a").css('visibility', 'visible');
 
                 $('.fa-arrow-up').css('visibility', 'hidden');
             }
@@ -74,6 +84,7 @@ $( document ).ready(function() {
             if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 1)");
                 $("nav").css("margin-top", $navCollapseOffset);
+                $(".navbar-nav a").css('visibility', 'hidden');
 
 
             }

@@ -42,6 +42,9 @@ nav .navbar-nav a {
   transition: all 0.2s ease-in-out;
   color: #dcdcdc;
 }
+nav .navbar-nav a i {
+  visibility: visible;
+}
 nav .navbar-nav a:hover {
   color: #ffffff;
 }
