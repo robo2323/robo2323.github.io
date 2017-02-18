@@ -1,6 +1,8 @@
 .nav-active {
-  font-size: 1.2vw;
   color: #ffffff;
+}
+.nav-active i {
+  font-size: 2.7em;
 }
 html,
 body {
@@ -27,6 +29,11 @@ nav {
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
 }
+@media only screen and (max-width: 950px) {
+  nav {
+    font-size: 2vw;
+  }
+}
 nav .navbar-nav a {
   display: block;
   text-align: center;
@@ -38,10 +45,9 @@ nav .navbar-nav a {
 nav .navbar-nav a:hover {
   color: #ffffff;
 }
-nav .navbar-nav a:hover i,
-nav .navbar-nav a:active i {
+nav .navbar-nav a:hover i {
   color: #3AB76D;
-  font-size: 2.5em;
+  font-size: 2.6em;
 }
 .navbar-name {
   float: left;

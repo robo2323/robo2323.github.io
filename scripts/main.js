@@ -1,9 +1,19 @@
 $( document ).ready(function() {
 
-        var $sectionAboutOffset = $("#about").offset().top,
-            $sectionPortfolioOffset = $("#portfolio").offset().top,
-            $sectionContactOffset = $("#contact").offset().top,
-            $navHeight = $('.navbar').height();
+    var $sectionAboutOffset = $("#about").offset().top,
+        $sectionPortfolioOffset = $("#portfolio").offset().top,
+        $sectionContactOffset = $("#contact").offset().top,
+        $navHeight = $('.navbar').height();
+
+    function setNavCollapseOffset() {
+            if ($(window).width() > 950) {
+                $navCollapseOffset = "-2.5%";
+            } else if ($(window).width() < 951) {
+                $navCollapseOffset = "-5%";
+            }
+        }
+
+    setNavCollapseOffset();
 
         //show navbar labels on hover
         $('.navbar-nav').hover(
@@ -14,7 +24,7 @@ $( document ).ready(function() {
 
             }, function () {
                 if ($(window).scrollTop() > 0)
-                    $('nav').css("margin-top", "-2.5%");
+                    $('nav').css("margin-top", $navCollapseOffset);
                 $('.navbar-name').css('top', '50%');
 
             }
@@ -24,6 +34,9 @@ $( document ).ready(function() {
         $(window).resize(function () {
             //recalculate navbar height for scrolling function
             $navHeight = $('.navbar').height();
+            setNavCollapseOffset();
+            $('nav').css("margin-top", "0");
+
         });
 
 
@@ -60,7 +73,7 @@ $( document ).ready(function() {
             }
             if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 1)");
-                $("nav").css("margin-top", "-2.5%");
+                $("nav").css("margin-top", $navCollapseOffset);
 
 
             }

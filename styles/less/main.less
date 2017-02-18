@@ -3,6 +3,13 @@
 @color-dark: #222;
 @font-alt: 'Libre Franklin',
 sans-serif;
+
+@a-font-size-lg: 1vw;
+@-font-size-md: 2vw;
+
+@mq-medium: ~"only screen and (max-width: 950px)";
+
+
 .sans-serif-font() {
   font-family: @font-alt;
 }
@@ -17,7 +24,9 @@ sans-serif;
 }
 
 .nav-active {
-  font-size: 1.2vw;
+  i {
+    font-size: 2.7em;
+  }
   color: rgb(255, 255, 255);
 }
 
@@ -53,13 +62,15 @@ nav {
   background: rgba(34, 34, 34, 0.1);
   .sans-serif-font;
   font-weight: 700;
-  font-size: 1vw;
+  font-size: @a-font-size-lg;
+  @media @mq-medium {
+    font-size: @-font-size-md;
+  }
   text-transform: uppercase;
   .transition-long;
   .navbar-nav {
     a {
       display: block;
-      //color: rgb(220, 220, 220);
       text-align: center;
       padding: 16px 16px 16px 16px;
       text-decoration: none;
@@ -68,9 +79,9 @@ nav {
       &:hover {
         color: rgb(255, 255, 255);
       }
-      &:hover i, &:active i {
+      &:hover i {
         color: @color-light;
-        font-size: 2.5em;
+        font-size: 2.6em;
       }
 
     }
