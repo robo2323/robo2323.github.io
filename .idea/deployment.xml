@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
+      <paths name="github.io">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="robo2323.github.io" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="localhost">
         <serverdata>
           <mappings>

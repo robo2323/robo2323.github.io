@@ -18,11 +18,12 @@ $( document ).ready(function() {
 
         //page scroll on nav clicks
         $('a.page-scroll').bind('click', function (event) {
-            var $anchor = $(this);
-            if($anchor.attr('href')!="page-top") {
-                var $offset = $navHeight - $(window).height() * 0.04;
+            var $anchor = $(this),
+                $offset;
+            if($anchor.attr('href')!=="page-top") {
+                 $offset = $navHeight - $(window).height() * 0.04;
             }else{
-                var $offset = 0;
+                 $offset = 0;
             }
 
             $('html, body').stop().animate({
@@ -31,7 +32,7 @@ $( document ).ready(function() {
             event.preventDefault();
         });
 
-        var $oldScrollPos = $(window).scrollTop();
+        //var $oldScrollPos = $(window).scrollTop();
 
         $(window).scroll(function () {
 
