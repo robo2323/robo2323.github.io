@@ -6,6 +6,7 @@ $( document ).ready(function() {
         $navHeight = $('.navbar').height();
 
     $("nav a").addClass('nav-a-style-normal');
+    $('#title-name').css('opacity', '1');
 
 
 
@@ -21,14 +22,14 @@ $( document ).ready(function() {
             var $anchor = $(this),
                 $offset;
             if($anchor.attr('href')!=="page-top") {
-                 $offset = $navHeight - $(window).height() * 0.04;
+                 $offset = $navHeight - $(window).height() * 0.028;
             }else{
                  $offset = 0;
             }
 
             $('html, body').stop().animate({
                 scrollTop: ($($anchor.attr('href')).offset().top - $offset)
-            }, 1000, 'easeInOutExpo');
+            }, 1200, 'easeInOutQuint');
             event.preventDefault();
         });
 
@@ -43,26 +44,29 @@ $( document ).ready(function() {
 
 
 
-                $('.fa-arrow-up').css('visibility', 'hidden');
+                $('.navbar-up-home').css('opacity', '0');
             }
             if ($scrollPos > 9) {
-                $('.fa-arrow-up').css('visibility', 'visible');
+                $('.navbar-up-home').css('opacity', '1');
 
             }
+
             if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 1)");
                 $("nav a").removeClass('nav-a-style-alt');
-
-
+                $('nav h1').css('opacity', '0');
+                $('#title-name').css('opacity', '1');
 
             }
+
             if ($scrollPos > ($sectionContactOffset - $navHeight - 1)) {
                 $("[href]").removeClass('nav-active');
 
 
                 $("[href='#contact']").addClass('nav-active');
                 $("nav").css("background-color", "#3AB76D");
-
+                $('nav h1').css('opacity', '0');
+                $('#title-contact').css('opacity', '1');
                 $("nav a").addClass('nav-a-style-alt');
 
 
@@ -74,10 +78,14 @@ $( document ).ready(function() {
             if ($scrollPos > $sectionAboutOffset - $navHeight - 1 && $scrollPos < $sectionPortfolioOffset - $navHeight) {
                 $("[href]").removeClass('nav-active');
                 $("[href='#about']").addClass('nav-active');
+                $('nav h1').css('opacity', '0');
+                $('#title-about').css('opacity', '1');
             }
             if ($scrollPos > $sectionPortfolioOffset - $navHeight - 1 && $scrollPos < $sectionContactOffset - $navHeight - 1) {
                 $("[href]").removeClass('nav-active');
                 $("[href='#portfolio']").addClass('nav-active');
+                $('nav h1').css('opacity', '0');
+                $('#title-portfolio').css('opacity', '1');
             }
         });
 

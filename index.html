@@ -12,7 +12,11 @@
     </title>
 
     <!-- Main styles -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700|open+sans:400,700" rel="stylesheet">
+<!--
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700|Roboto:400,700|Montserrat:400,700" rel="stylesheet">
+-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway:400,600" rel="stylesheet">
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -28,42 +32,67 @@
 
 <nav class="navbar">
 
-    <a class="page-scroll navbar-name" href="#page-top"><i class="a-contact fa fa-arrow-up fa-2x"></i></a>
+    <h1 id="title-name">rob harkness</h1>
+
+
+    <a class="page-scroll navbar-up-home" href="#page-top"><i class="a-contact fa fa-arrow-circle-up fa-2x"></i></a>
+
+
+    <h1 id="title-about">about</h1>
+    <h1 id="title-portfolio">portfolio</h1>
+    <h1 id="title-contact">contact</h1>
 
     <ul class="navbar-nav">
         <li>
-            <a class="page-scroll" href="#about"><i class="a-contact fa fa-address-card-o fa-2x"></i></a>
+            <a class="page-scroll" href="#about"><i class="a-contact fa fa-address-card-o fa-2x"></i><p>about</p></a>
         </li>
         <li>
-            <a class="page-scroll" href="#portfolio"><i class="a-contact fa fa-file-code-o fa-2x"></i></a>
+            <a class="page-scroll" href="#portfolio"><i class="a-contact fa fa-file-code-o fa-2x"></i><p>portfolio</p></a>
         </li>
         <li>
-            <a class="page-scroll" href="#contact"><i class="a-contact fa fa-envelope-o fa-2x"></i></a>
+            <a class="page-scroll" href="#contact"><i class="a-contact fa fa-envelope-o fa-2x"></i><p>contact</p></a>
         </li>
     </ul>
 
 </nav>
 <header>
-    <div id='header container'>
-        <h1>Rob Harkness</h1>
-        <h1>Full-stack developer</h1>
-        <hr class="light">
-        <p>JavaScript and Rails specialist</p>
+    <div class = "container" id='header'>
+
+        <h1>Web Dev</h1>
+        <hr>
+        <h2>Self-taught, will never stop learning</h2>
 
         <a href="#about" class="page-scroll a-contact"><i class="fa fa-arrow-circle-down fa-4x"></i></a>
     </div>
 </header>
 <section id="about" class="alt"></section>
-<section id="portfolio" class="light"></section>
+<section id="portfolio" class="light">
+    <div class="flex-container">
+        <a href="https://codepen.io/robo2323/full/rjavoz"> <div class="img-container">
+            <img src="img/tictactoe.jpg">
+            <i class="fa fa-search-plus fa-4x"></i>
+            <div class="img-text"><p>A Tic Tac Toe game with a computer player. HTML/CSS/LESS/pure JavaScript, no libraries, no bootstrap</p></div>
+        </div></a>
+        <div class="img-container">
+            <img src="img/tictactoe.jpg">
+            <div><p>A Tic Tac Toe game with a computer player</p></div>
+        </div>
+        <div class="img-container">
+            <img src="img/tictactoe.jpg">
+            <div><p>A Tic Tac Toe game with a computer player</p></div>
+        </div>
+    </div>
+</section>
 
 <footer id="contact" class="dark">
-    <div class="center">
+    <div class="container center">
 
         <h2 class="section-heading">Find me on the Web!</h2>
         <hr>
         <p>Get in contact with me via your preferred social media site below</p>
-    </div>
-    <div class="container">
+
+
+    <div class="flex-container">
         <a target='_blank' href="https://github.com/robo2323" class="button"><i class="fa fa-github fa-fw fa-lg"></i> <span class="network-name">Github</span></a>
 
 
@@ -74,11 +103,12 @@
         <a target='_blank' href="https://twitter.com/2323robo" class="button"><i class="fa fa-twitter fa-fw fa-lg"></i> <span class="network-name">Twitter</span></a>
     </div>
 
-    <div class="margin-bottom center">
+    <div id = "email" class="center">
 
 
         <a class="a-contact" href="mailto:rob.adam.h@gmail.com"><i class="fa fa-envelope-o fa-3x"></i><br>rob.adam.h@gmail.com</a>
 
+    </div>
     </div>
 
 
