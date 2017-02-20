@@ -37,8 +37,8 @@
           <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/less/main.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+                <state relative-caret-position="541">
+                  <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -64,9 +64,9 @@
                 <state relative-caret-position="425">
                   <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
                   <folding>
-                    <marker date="1487554402841" expanded="true" signature="3192:3249" ph="{...}" />
-                    <marker date="1487554402841" expanded="true" signature="3264:3311" ph="{...}" />
-                    <marker date="1487554402841" expanded="true" signature="3497:3518" ph="{...}" />
+                    <marker date="1487554432944" expanded="true" signature="3191:3248" ph="{...}" />
+                    <marker date="1487554432944" expanded="true" signature="3263:3310" ph="{...}" />
+                    <marker date="1487554432944" expanded="true" signature="3496:3517" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -281,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487294264155</updated>
       <workItem from="1487294266234" duration="35658000" />
-      <workItem from="1487551196784" duration="2155000" />
+      <workItem from="1487551196784" duration="2187000" />
     </task>
     <task id="LOCAL-00001" summary="scripts position">
       <created>1487296985152</created>
@@ -577,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487554373532</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="media queries">
+      <created>1487554410646</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1487554410646</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37813000" />
+    <option name="totallyTimeSpent" value="37845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,9 +677,9 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <marker date="1487554402841" expanded="true" signature="3192:3249" ph="{...}" />
-            <marker date="1487554402841" expanded="true" signature="3264:3311" ph="{...}" />
-            <marker date="1487554402841" expanded="true" signature="3497:3518" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3191:3248" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3263:3310" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3496:3517" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -697,9 +704,9 @@
         <state relative-caret-position="425">
           <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding>
-            <marker date="1487554402841" expanded="true" signature="3192:3249" ph="{...}" />
-            <marker date="1487554402841" expanded="true" signature="3264:3311" ph="{...}" />
-            <marker date="1487554402841" expanded="true" signature="3497:3518" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3191:3248" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3263:3310" ph="{...}" />
+            <marker date="1487554432944" expanded="true" signature="3496:3517" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -714,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="541">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding />
         </state>
       </provider>
