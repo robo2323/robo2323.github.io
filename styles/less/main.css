@@ -50,7 +50,7 @@ hr {
   border-radius: 5px;
 }
 .img-container img {
-  transition: all .5s ease;
+  transition: all .4s ease;
   opacity: 1;
   display: block;
   max-width: 100%;
@@ -59,8 +59,7 @@ hr {
   border-radius: 5px;
 }
 .img-container div {
-  text-align: center;
-  transition: all .5s ease;
+  transition: all .4s ease;
   color: #222;
   position: absolute;
   width: 80%;
@@ -71,15 +70,20 @@ hr {
 }
 .img-container div p {
   opacity: 0;
-  transition: all .5s ease;
-  padding: 15px 0 15px 0;
+  transition: all .4s ease;
+  padding: 15px;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
+  text-align: right;
 }
-.img-container i {
+.img-container div p i {
+  position: relative;
+  color: #222;
+}
+.img-container .fa-search-plus {
   opacity: .9;
-  transition: all .5s ease;
+  transition: all .4s ease;
   color: #222;
   position: absolute;
   top: 50%;
@@ -95,7 +99,7 @@ hr {
 .img-container:hover p {
   opacity: 1;
 }
-.img-container:hover i {
+.img-container:hover .fa-search-plus {
   font-size: 5em;
   opacity: 1;
   color: #fff;
@@ -149,8 +153,8 @@ nav .navbar-nav a {
 nav .navbar-nav a p {
   opacity: 0;
   position: fixed;
-  color: #ffffff;
-  background: #1e1e1e;
+  color: #222;
+  background: #fff;
   border-radius: 5px 5px 5px 5px;
   padding: 5px;
   transform: translateX(-5%) translateY(18px);
@@ -166,7 +170,7 @@ nav .navbar-nav a p::before {
   margin-left: -0.5vw;
   border-width: .5vw;
   border-style: solid;
-  border-color: transparent transparent #1e1e1e transparent;
+  border-color: transparent transparent #fff  transparent;
 }
 @media only screen and (max-width: 950px) and (min-width: 461px) {
   nav .navbar-nav a {
