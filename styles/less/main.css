@@ -43,7 +43,9 @@ hr {
   margin: 40px auto;
 }
 .img-container {
-  background-color: #222222;
+  width: 35%;
+  min-width: 300px;
+  background-color: #969696;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0 20px 25px 20px;
@@ -75,7 +77,7 @@ hr {
   transition: all .4s ease;
   position: absolute;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(34, 34, 34, 0.8);
   opacity: 0;
   border-radius: 5px;
   top: 50%;
@@ -85,14 +87,15 @@ hr {
 }
 .img-container div p {
   transition: all .4s ease;
-  padding: 15px;
-  font-weight: 300;
-  color: #222;
+  font-size: 1.8vw;
+  padding: 8px;
+  font-weight: 700;
+  color: #F7F7F7;
   text-align: left;
 }
 .img-container div p i {
   position: relative;
-  color: #222;
+  color: #F7F7F7;
 }
 .img-container .fa-search-plus {
   opacity: .9;
@@ -103,17 +106,17 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-size: 7em;
+  font-size: 8vw;
   text-shadow: 10px 10px 15px #222;
 }
 .img-container:hover img {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 .img-container:hover div {
   opacity: 1;
 }
 .img-container:hover .fa-search-plus {
-  font-size: 5em;
+  font-size: 5vw;
   opacity: 1;
   color: #fff;
   top: 0;
@@ -232,7 +235,7 @@ nav h1 {
   .navbar-up-home {
     font-size: 3.5vw;
     padding: 10px;
-    margin: 0 35%;
+    margin: 0 40%;
   }
   .navbar-up-home:focus i {
     box-shadow: none;
