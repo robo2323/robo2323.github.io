@@ -53,7 +53,7 @@ $( document ).ready(function() {
 
             if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
                 $("nav").css("background-color", "rgba(34, 34, 34, 1)");
-                $("nav a").removeClass('nav-a-style-alt');
+                $("nav a").removeClass('nav-a-style-alt nav-a-style-green');
                 $('nav h1').css('opacity', '0');
                 $('#title-name').css('opacity', '1');
 
@@ -67,7 +67,7 @@ $( document ).ready(function() {
                 $("nav").css("background-color", "#3AB76D");
                 $('nav h1').css('opacity', '0');
                 $('#title-contact').css('opacity', '1');
-                $("nav a").addClass('nav-a-style-alt');
+                $("nav a").removeClass('nav-a-style-green').addClass('nav-a-style-alt');
 
 
             }
@@ -86,6 +86,8 @@ $( document ).ready(function() {
                 $("[href='#portfolio']").addClass('nav-active');
                 $('nav h1').css('opacity', '0');
                 $('#title-portfolio').css('opacity', '1');
+                $("nav a").removeClass('nav-a-style-alt').addClass('nav-a-style-green');
+
             }
         });
 

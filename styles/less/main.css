@@ -1,9 +1,18 @@
+/*todo use less color, colors only for highlights*/
+/*todo change header text*/
+/*todo add div to about, add info, pic and skills*/
+/*fixme font scaling and div widths for mobile/resonsive*/
 .nav-a-style-normal:hover i {
-  color: #3AB76D;
+  color: #FE7251;
   font-size: 2.6em;
 }
 .nav-a-style-normal:hover p {
   opacity: 1;
+}
+.nav-a-style-green:hover i {
+  text-shadow: 3px 3px 2px #444;
+  color: #3AB76D;
+  font-size: 2.6em;
 }
 .nav-a-style-alt:hover i {
   text-shadow: 3px 3px 2px #444;
@@ -47,6 +56,7 @@ hr {
   min-width: 300px;
   background-color: #F7F7F7;
   color: #222;
+  text-align: right;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 0 20px 25px 20px;
@@ -120,8 +130,8 @@ hr {
   font-size: 5vw;
   opacity: 1;
   color: #222;
-  top: -8%;
-  left: -8%;
+  top: -6%;
+  left: -6%;
   transform: rotate(180deg);
   text-shadow: none;
 }

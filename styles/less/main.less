@@ -1,5 +1,13 @@
+/*todo use less color, colors only for highlights*/
+/*todo change header text*/
+/*todo add div to about, add info, pic and skills*/
+/*fixme font scaling and div widths for mobile/resonsive*/
+
 @color-light: #3AB76D;
 @color-alt: #FE7251;
+//@color-alt: #E56149;
+//color-light: #35A85C;
+
 @color-dark: #222;
 @font-main: 'Open Sans Condensed',
 sans-serif;
@@ -18,26 +26,29 @@ sans-serif;
 @mq-small: ~"only screen and (max-width: 460px)";
 
 .nav-a-style-normal{
-
   &:hover i {
-    color: @color-light;
+    color: @color-alt;
     font-size: 2.6em;
   }
-
   &:hover p{
     opacity: 1;
   }
+}
 
+.nav-a-style-green{
+  &:hover i {
+    text-shadow: 3px 3px 2px #444;
+    color: @color-light;
+    font-size: 2.6em;
+  }
 }
 
 .nav-a-style-alt{
-
   &:hover i {
     text-shadow: 3px 3px 2px #444;
     color: @color-dark;
     font-size: 2.6em;
   }
-
 }
 
 .alt-sans-font() {
@@ -117,6 +128,7 @@ hr {
   min-width: 300px;
   background-color: #F7F7F7;
   color: @color-dark;
+  text-align: right;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 0 20px 25px 20px;
@@ -205,8 +217,8 @@ hr {
     font-size: 5vw;
     opacity: 1;
     color: @color-dark;
-    top: -8%;
-    left: -8%;
+    top: -6%;
+    left: -6%;
     transform: rotate(180deg);
     text-shadow: none;
 
