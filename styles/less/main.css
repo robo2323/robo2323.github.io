@@ -49,6 +49,19 @@ hr {
   margin: 0 20px 25px 20px;
   border-radius: 5px;
 }
+.img-container .fa-check-circle-o {
+  color: #3AB76D;
+}
+.img-container .fa-times-circle-o {
+  color: #FE7251;
+}
+.img-container strong {
+  font-weight: 700;
+  color: #3AB76D;
+}
+.img-container em {
+  color: #FE7251;
+}
 .img-container img {
   transition: all .4s ease;
   opacity: 1;
@@ -60,22 +73,22 @@ hr {
 }
 .img-container div {
   transition: all .4s ease;
-  color: #222;
   position: absolute;
   width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  border-radius: 5px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 .img-container div p {
-  opacity: 0;
   transition: all .4s ease;
   padding: 15px;
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-  text-align: right;
+  font-weight: 300;
+  color: #222;
+  text-align: left;
 }
 .img-container div p i {
   position: relative;
@@ -84,19 +97,19 @@ hr {
 .img-container .fa-search-plus {
   opacity: .9;
   transition: all .4s ease;
-  color: #222;
+  color: #F7F7F7;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-size: 8em;
-  text-shadow: 5px 5px 10px #666;
+  font-size: 7em;
+  text-shadow: 10px 10px 15px #222;
 }
 .img-container:hover img {
   opacity: 0.3;
 }
-.img-container:hover p {
+.img-container:hover div {
   opacity: 1;
 }
 .img-container:hover .fa-search-plus {
@@ -106,6 +119,7 @@ hr {
   top: 0;
   left: 0;
   transform: rotate(180deg);
+  text-shadow: none;
 }
 .container {
   background: rgba(34, 34, 34, 0.4);
@@ -139,7 +153,7 @@ nav {
 }
 @media only screen and (max-width: 460px) {
   nav {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 nav .navbar-nav a {
@@ -154,7 +168,7 @@ nav .navbar-nav a p {
   opacity: 0;
   position: fixed;
   color: #222;
-  background: #fff;
+  background: #F7F7F7;
   border-radius: 5px 5px 5px 5px;
   padding: 5px;
   transform: translateX(-5%) translateY(18px);
@@ -170,7 +184,7 @@ nav .navbar-nav a p::before {
   margin-left: -0.5vw;
   border-width: .5vw;
   border-style: solid;
-  border-color: transparent transparent #fff  transparent;
+  border-color: transparent transparent #F7F7F7  transparent;
 }
 @media only screen and (max-width: 950px) and (min-width: 461px) {
   nav .navbar-nav a {
@@ -179,7 +193,7 @@ nav .navbar-nav a p::before {
 }
 @media only screen and (max-width: 460px) {
   nav .navbar-nav a {
-    padding: 16px 10px 10px 15px;
+    padding: 16px 8px 8px 15px;
   }
 }
 nav .navbar-nav a:hover {
@@ -192,7 +206,7 @@ nav h1 {
   transform: translateY(-50%);
   margin: 0 10px;
   text-align: left;
-  color: #fff;
+  color: #F7F7F7;
   font-size: 1.25em;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
@@ -216,12 +230,9 @@ nav h1 {
 }
 @media only screen and (max-width: 460px) {
   .navbar-up-home {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 10px;
-  }
-  .navbar-up-home i {
-    visibility: hidden;
-    color: #fff;
+    margin: 0 20%;
   }
   .navbar-up-home:focus i {
     box-shadow: none;
@@ -248,7 +259,8 @@ footer {
   padding: 30px 0;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #fff;
+  font-weight: 300;
+  color: #F7F7F7;
 }
 header h1,
 section h1,
@@ -263,13 +275,13 @@ section h2,
 footer h2 {
   text-transform: uppercase;
   padding: 20px;
-  font-size: 3.8em;
+  font-size: 3.8vw;
 }
 header p,
 section p,
 footer p {
   padding: 15px;
-  font-size: 2.2em;
+  font-size: 2.2vw;
 }
 header {
   height: 100%;
@@ -295,7 +307,7 @@ header i {
   margin: 10vh auto;
 }
 footer a {
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 footer .container {
   background: rgba(200, 200, 200, 0.1);
@@ -308,10 +320,10 @@ footer #email {
   font-weight: 400;
   font-weight: 600;
   text-decoration: none;
-  border: 3px solid #3AB76D;
-  color: #fff;
+  border: 2px solid #3AB76D;
+  color: #F7F7F7;
   margin: 50px 5px 10px 5px;
-  border-radius: 300px;
+  border-radius: 6px;
   padding: 15px 30px;
   text-transform: uppercase;
   box-shadow: 0 2px 5px #111;
@@ -320,10 +332,11 @@ footer #email {
 }
 .button:hover {
   background-color: #3AB76D;
+  border-color: #fff;
   color: #fff;
 }
 .a-contact {
-  color: #fff;
+  color: #F7F7F7;
   text-shadow: 3px 3px 2px #111;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
