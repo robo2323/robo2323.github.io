@@ -113,21 +113,16 @@ hr {
 }
 
 .img-container{
-  width: 35%;
+  width: 25%;
   min-width: 300px;
-  background-color: rgb(150,150,150);
+  background-color: #F7F7F7;
+  color: @color-dark;
   position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 0 20px 25px 20px;
   border-radius: 5px;
-  //border: 3px solid #F7F7F7;
+  //border: 15px solid rgb(247,247,247);
 
-  .fa-check-circle-o{
-    color: @color-light;
-  }
-  .fa-times-circle-o{
-    color: @color-alt;
-  }
   strong{
     font-weight: 700;
     color: @color-light;
@@ -144,20 +139,27 @@ hr {
     max-width: 100%;
     height: auto;
     backface-visibility: hidden;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 
   }
-  div {
+  .img-text {
     transition: all .4s ease;
     position: absolute;
     width: 80%;
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(34, 34, 34, 0.9);
     opacity: 0;
     border-radius: 5px;
-    top: 50%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+
+    .fa-check-circle-o{
+      color: @color-light;
+    }
+    .fa-times-circle-o{
+      color: @color-alt;
+    }
 
     p {
       transition: all .4s ease;
@@ -183,18 +185,18 @@ hr {
       transition: all .4s ease;
       color: #F7F7F7;
       position: absolute;
-      top: 50%;
+      top: 35%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      font-size: 8vw;
+      transform: translate(-50%, -35%);
+      -ms-transform: translate(-50%, -35%);
+      font-size: 7vw;
       text-shadow: 10px 10px 15px #222;
 
 
     }
 
   &:hover img{
-    opacity: 0.4;
+    opacity: 0.3;
   }
   &:hover div{
     opacity: 1;
@@ -202,9 +204,9 @@ hr {
   &:hover .fa-search-plus{
     font-size: 5vw;
     opacity: 1;
-    color: #fff;
-    top: 0;
-    left: 0;
+    color: @color-dark;
+    top: -8%;
+    left: -8%;
     transform: rotate(180deg);
     text-shadow: none;
 
