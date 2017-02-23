@@ -4,26 +4,29 @@
 /*fixme font scaling and div widths for mobile/resonsive*/
 .nav-a-style-normal:hover i {
   color: #FE7251;
-  font-size: 2.6em;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
 .nav-a-style-normal:hover p {
   opacity: 1;
 }
+.color-white {
+  color: #fff;
+}
 .nav-a-style-green:hover i {
   text-shadow: 3px 3px 2px #444;
   color: #3AB76D;
-  font-size: 2.6em;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
 .nav-a-style-alt:hover i {
   text-shadow: 3px 3px 2px #444;
   color: #222;
-  font-size: 2.6em;
+  transform: scale3d(2, 2, 2);
 }
 .nav-active {
   color: #c8c8c8;
 }
 .nav-active i {
-  font-size: 2.7em;
+  transform: scale3d(1.5, 1.5, 1.5);
 }
 .light {
   background: #3AB76D;
@@ -271,16 +274,22 @@ header a {
   position: absolute;
   width: 10%;
   left: 45%;
-  top: 85vh;
+  top: 80vh;
+  font-size: 2vw;
+}
+header a .fa-circle {
+  opacity: 1;
+  color: #FE7251;
+}
+header a .inverse {
+  color: #ffffff;
 }
 header a i {
-  color: #F7F7F7;
   transition: all 0.1s ease-in-out;
+  text-shadow: none;
 }
 header a:hover i {
-  color: #fff;
-  text-shadow: 6px 6px 2px #111;
-  font-size: 10vw;
+  transform: scale3d(1.3, 1.3, 1.3);
 }
 header a:focus {
   text-shadow: none;
@@ -360,6 +369,7 @@ footer #email {
   margin: 0;
   position: absolute;
   width: 10%;
+  height: 6%;
   left: 45%;
   top: -2px;
   transition: all 0.3s ease-in-out;
@@ -379,9 +389,10 @@ footer #email {
 .img-container .img-info-expand i {
   background: #F7F7F7;
   border-radius: 0 0 10px 10px;
-  width: 50px;
-  height: 40px;
-  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 4px 0 rgba(34, 34, 34, 0.8);
+  font-size: 1em;
 }
 .img-container img {
   transition: all .4s ease;

@@ -34,18 +34,22 @@ sans-serif;
 .nav-a-style-normal{
   &:hover i {
     color: @color-alt;
-    font-size: 2.6em;
+    transform: scale3d(1.5,1.5,1.5);
   }
   &:hover p{
     opacity: 1;
   }
 }
 
+.color-white{
+  color: #fff;
+}
+
 .nav-a-style-green{
   &:hover i {
     text-shadow: 3px 3px 2px #444;
     color: @color-light;
-    font-size: 2.6em;
+    transform: scale3d(1.5,1.5,1.5);
   }
 }
 
@@ -53,13 +57,13 @@ sans-serif;
   &:hover i {
     text-shadow: 3px 3px 2px #444;
     color: @color-dark;
-    font-size: 2.6em;
+    transform: scale3d(2,2,2);
   }
 }
 
 .nav-active {
   i {
-    font-size: 2.7em;
+    transform: scale3d(1.5,1.5,1.5);
   }
   color: rgb(200, 200, 200);
 }
@@ -348,16 +352,26 @@ header {
     position: absolute;
     width: 10%;
     left: 45%;
-    top: 85vh;
+    top: 80vh;
+    font-size: 2vw;
+
+
+    .fa-circle{
+      opacity: 1;
+      color: @color-alt;
+    }
+    .inverse{
+      color: #ffffff;
+    }
 
     i{
-      color: #F7F7F7;
       .trasnsition-short;
+      text-shadow: none;
+
     }
     &:hover i{
-      color: #fff;
-      text-shadow: 6px 6px 2px #111;
-      font-size: 10vw;
+      //text-shadow: 6px 6px 2px #111;
+    transform: scale3d(1.3,1.3,1.3);
     }
     &:focus{
       text-shadow: none;
@@ -438,6 +452,7 @@ footer{
     margin: 0;
     position: absolute;
     width: 10%;
+    height: 6%;
     left: 45%;
     top: -2px;
 
@@ -447,9 +462,10 @@ footer{
     i {
       background: #F7F7F7;
       border-radius: 0 0 10px 10px;
-      width: 50px;
-      height: 40px;
-      box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      box-shadow: 3px 3px 4px 0 rgba(34, 34, 34, .8);
+      font-size: 1em;
 
     }
   }
