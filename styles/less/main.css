@@ -380,6 +380,7 @@ footer #email {
   background: #F7F7F7;
   border-radius: 0 0 10px 10px;
   width: 50px;
+  height: 40px;
   box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.8);
 }
 .img-container img {
