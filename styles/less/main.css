@@ -61,7 +61,6 @@ a {
 hr {
   max-width: 80px;
   border-width: 2px;
-  margin: 40px auto;
 }
 .button {
   font-family: 'Raleway', sans-serif;
@@ -104,6 +103,20 @@ hr {
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
   text-decoration: none;
+  font-size: 1.25vw;
+}
+@media only screen and (max-width: 950px) and (min-width: 461px) {
+  .a-contact {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .a-contact {
+    font-size: 3.5vw;
+  }
+}
+.a-contact i {
+  font-size: 3.5em;
 }
 .a-contact:active {
   text-shadow: 0 0 0;
