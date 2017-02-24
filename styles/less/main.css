@@ -23,8 +23,8 @@
 .nav-a-style-alt:hover i {
   text-shadow: 3px 3px 2px #444;
   color: #222222;
-  -webkit-transform: scale3d(2, 2, 2);
-          transform: scale3d(2, 2, 2);
+  -webkit-transform: scale3d(1.5, 1.5, 1.5);
+          transform: scale3d(1.5, 1.5, 1.5);
 }
 .nav-active {
   color: #c8c8c8;
@@ -41,6 +41,9 @@
 }
 .dark {
   background: #222222;
+}
+.page-white {
+  background: #f7f7f7;
 }
 .center {
   text-align: center;
@@ -427,7 +430,7 @@ footer #email {
   left: 0;
 }
 .img-container p {
-  font-size: 1.6em;
+  font-size: 1.3em;
   padding: 4px 8px 8px 8px;
 }
 .img-container strong {
@@ -481,11 +484,11 @@ footer #email {
   border-radius: 0;
 }
 .img-container .img-text {
-  -webkit-transition: all .4s ease;
-          transition: all .4s ease;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
   position: absolute;
   width: 80%;
-  height: 80%;
+  height: 60%;
   background-color: rgba(34, 34, 34, 0.9);
   border-radius: 5px;
   top: -100%;
@@ -514,7 +517,7 @@ footer #email {
 .img-container .img-text p {
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 8px;
   font-weight: 700;
   color: #F7F7F7;

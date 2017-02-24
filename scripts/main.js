@@ -1,3 +1,6 @@
+/*global $, document, window */
+
+
 $( document ).ready(function() {
 
     var $sectionAboutOffset = $("#about").offset().top,
@@ -22,7 +25,7 @@ $( document ).ready(function() {
             var $anchor = $(this),
                 $offset;
             if($anchor.attr('href')!=="page-top") {
-                 $offset = $navHeight - $(window).height() * 0.028;
+                 $offset = $navHeight - $(window).height() * 0.03;
             }else{
                  $offset = 0;
             }
