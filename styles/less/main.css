@@ -69,7 +69,7 @@ hr {
   text-decoration: none;
   border: 2px solid #3ab76d;
   color: #F7F7F7;
-  margin: 50px 5px 10px 5px;
+  margin: 25px 5px 10px 5px;
   border-radius: 6px;
   padding: 15px 30px;
   text-transform: uppercase;
@@ -103,20 +103,7 @@ hr {
   -webkit-transition: all 0.1s ease-in-out;
           transition: all 0.1s ease-in-out;
   text-decoration: none;
-  font-size: 1.25vw;
-}
-@media only screen and (max-width: 950px) and (min-width: 461px) {
-  .a-contact {
-    font-size: 2.5vw;
-  }
-}
-@media only screen and (max-width: 460px) {
-  .a-contact {
-    font-size: 3.5vw;
-  }
-}
-.a-contact i {
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 .a-contact:active {
   text-shadow: 0 0 0;
@@ -331,7 +318,7 @@ header h2,
 section h2,
 footer h2 {
   text-transform: uppercase;
-  padding: 20px;
+  padding: 5px;
   font-size: 3.8em;
 }
 header p,
@@ -501,7 +488,7 @@ footer #email {
           transition: all .5s ease;
   position: absolute;
   width: 80%;
-  height: 60%;
+  height: 70%;
   background-color: rgba(34, 34, 34, 0.9);
   border-radius: 5px;
   top: -100%;
