@@ -392,7 +392,8 @@ header div a:focus {
   background-image: url(../../img/background.jpg);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  color: #222;
+  color: #fff;
+  padding-top: 0;
   min-height: 100%;
 }
 #about a {
@@ -411,6 +412,10 @@ header div a:focus {
   text-shadow: none;
 }
 #about .flex-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #222;
+  padding-bottom: 55px;
+  padding-top: 55px;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;

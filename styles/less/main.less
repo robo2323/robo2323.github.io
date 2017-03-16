@@ -304,7 +304,7 @@ nav {
         position: absolute;
         width: 20%;
         left: 40%;
-        @media @mq-small{
+        @media @mq-small {
             left: 25%;
         }
         text-align: center;
@@ -421,11 +421,15 @@ header {
     background-size: cover;
     background-image: url(../../img/background.jpg); //url(../../img/background-grey.jpg);
     filter: grayscale(100%);
-    color: #222;
+    color: #fff;
+    padding-top: 0;
+    //#222;
     min-height: 100%;
     a {
         font-size: 2em;
-        i{.transition-short;}
+        i {
+            .transition-short;
+        }
         &:hover i {
             //text-shadow: 6px 6px 2px #111;
             transform: scale3d(1.4, 1.4, 1.4);
@@ -437,6 +441,11 @@ header {
     }
     .flex-container {
         //margin: 3% 3% 0 3%;
+            background-color: rgba(255,255,255,0.5);
+        color: #222;
+        padding-bottom: 55px;
+        padding-top: 55px;
+
         justify-content: space-around;
         div {
             width: 23%;
@@ -465,6 +474,7 @@ header {
             }
             text-align: left;
         }
+        #about-learning {}
     }
 }
 
