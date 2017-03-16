@@ -385,8 +385,8 @@ header {
         //background: rgba(34, 34, 34, 0.4);
         a {
             //position: relative;
-            width: 10%;
-            font-size: 1.8em;
+            //width: 10%;
+            font-size: 1.5em;
             //left: 45%;
             //top: 50%;
             /*.inverse {
@@ -416,10 +416,22 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../../img/background.jpg);//url(../../img/background-grey.jpg);
+    background-image: url(../../img/background.jpg); //url(../../img/background-grey.jpg);
     filter: grayscale(100%);
     color: #222;
     height: 100%;
+    a {
+        font-size: 2em;
+        i{.transition-short;}
+        &:hover i {
+            //text-shadow: 6px 6px 2px #111;
+            transform: scale3d(1.4, 1.4, 1.4);
+            color: #fff;
+        }
+        &:focus {
+            text-shadow: none;
+        }
+    }
     .flex-container {
         //margin: 3% 3% 0 3%;
         justify-content: space-around;
@@ -477,6 +489,7 @@ footer {
 
 //portfolio images/links
 //class to show project details
+
 /*.show-proj-details() {
     &:hover img,
     &:active img {
@@ -506,7 +519,7 @@ footer {
 
 .img-container {
     overflow: hidden;
-    width: 21%;
+    width: 20%;
     min-width: 300px;
     background-color: #F7F7F7;
     color: @color-dark;
@@ -541,6 +554,7 @@ footer {
     }
     em {
         color: @color-alt;
+        text-decoration: line-through;
     }
     .img-info-expand {
         text-align: center;
@@ -553,7 +567,6 @@ footer {
         top: -4px;
         .transition-long;
         //.show-proj-details;
-
         i {
             background: #F7F7F7;
             border-radius: 0 0 10px 10px;
@@ -585,6 +598,12 @@ footer {
         transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
         .responsive-text;
+        div {
+            color: #fff;
+            opacity: 0.4;
+            position: absolute;
+            transform: translateX(-100px) translateY(100px);
+        }
         .fa-check-circle-o {
             color: @color-light;
         }
@@ -604,7 +623,8 @@ footer {
             }
         }
     }
-    &:hover, &:active{
+    &:hover,
+    &:active {
         .show-proj-details;
     }
 }

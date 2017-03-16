@@ -360,8 +360,7 @@ header div {
   margin-top: 10% !important;
 }
 header div a {
-  width: 10%;
-  font-size: 1.8em;
+  font-size: 1.5em;
   /*.inverse {
             color: #ffffff;
             background-color: rgba(34, 34, 34, .3);
@@ -390,6 +389,21 @@ header div a:focus {
           filter: grayscale(100%);
   color: #222;
   height: 100%;
+}
+#about a {
+  font-size: 2em;
+}
+#about a i {
+  -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+#about a:hover i {
+  -webkit-transform: scale3d(1.4, 1.4, 1.4);
+          transform: scale3d(1.4, 1.4, 1.4);
+  color: #fff;
+}
+#about a:focus {
+  text-shadow: none;
 }
 #about .flex-container {
   -webkit-justify-content: space-around;
@@ -468,7 +482,7 @@ footer #email a:hover i {
 }
 .img-container {
   overflow: hidden;
-  width: 21%;
+  width: 20%;
   min-width: 300px;
   background-color: #F7F7F7;
   color: #222222;
@@ -512,6 +526,7 @@ footer #email a:hover i {
 }
 .img-container em {
   color: #fe7251;
+  text-decoration: line-through;
 }
 .img-container .img-info-expand {
   text-align: center;
@@ -569,6 +584,14 @@ footer #email a:hover i {
   .img-container .img-text {
     font-size: 3.5vw;
   }
+}
+.img-container .img-text div {
+  color: #fff;
+  opacity: 0.4;
+  position: absolute;
+  -webkit-transform: translateX(-100px) translateY(100px);
+      -ms-transform: translateX(-100px) translateY(100px);
+          transform: translateX(-100px) translateY(100px);
 }
 .img-container .img-text .fa-check-circle-o {
   color: #3ab76d;
