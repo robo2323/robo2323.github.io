@@ -388,7 +388,7 @@ header div a:focus {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   color: #222;
-  height: 100%;
+  min-height: 100%;
 }
 #about a {
   font-size: 2em;
