@@ -45,7 +45,7 @@ sans-serif;
 .nav-a-style-normal {
     &:hover i {
         color: @color-alt;
-        transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.4, 1.4, 1.4);
     }
     &:hover p {
         opacity: 1;
@@ -60,7 +60,7 @@ sans-serif;
     &:hover i {
         text-shadow: 3px 3px 2px #444;
         color: @color-light;
-        transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.4, 1.4, 1.4);
     }
 }
 
@@ -68,13 +68,13 @@ sans-serif;
     &:hover i {
         text-shadow: 3px 3px 2px #444;
         color: @color-dark;
-        transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.4, 1.4, 1.4);
     }
 }
 
 .nav-active {
     i {
-        transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.4, 1.4, 1.4);
     }
     color: rgb(200, 200, 200);
 }
@@ -91,7 +91,7 @@ sans-serif;
 }
 
 //transition classes
-.trasnsition-short() {
+.transition-short() {
     transition: all .1s ease-in-out;
 }
 
@@ -145,11 +145,15 @@ body {
 }
 
 a {
-    .trasnsition-short;
+    .transition-short;
+}
+
+em {
+    font-style: italic;
 }
 
 hr {
-    max-width: 80px;
+    max-width: 150px;
     border-width: 2px;
     //margin: 40px auto;
 }
@@ -167,7 +171,7 @@ hr {
     text-transform: uppercase;
     box-shadow: 0 2px 5px #111;
     .responsive-text;
-    .trasnsition-short;
+    .transition-short;
     flex: 0 0 auto;
     &:hover {
         background-color: @color-alt;
@@ -179,10 +183,10 @@ hr {
 .a-contact {
     color: #F7F7F7;
     text-shadow: 3px 3px 2px #111;
-    .trasnsition-short;
+    .transition-short;
     text-decoration: none;
     // .responsive-text;
-    font-size: 1.5em;
+    //font-size: 1.5em;
     &:active {
         text-shadow: 0 0 0;
     }
@@ -193,7 +197,7 @@ hr {
 
 //containers
 .container {
-    margin: 5% 25% 0 25%;
+    margin: 3% 25% 0 25%;
     width: 50%;
     .responsive-text;
     @media @mq-medium {
@@ -212,7 +216,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3%;
+    //margin-top: 3%;
 }
 
 //navigation
@@ -224,7 +228,7 @@ nav {
     .alt-sans-font;
     //font-size: @a-font-size-lg;
     text-transform: uppercase;
-    .transition-long;
+    .transition-short;
     z-index: 999;
     /*@media @mq-medium {
     font-size: @a-font-size-md;
@@ -250,7 +254,7 @@ nav {
             text-align: center;
             padding: @padding-nav-a-large;
             text-decoration: none;
-            .trasnsition-short;
+            .transition-short;
             color: rgb(220, 220, 220);
             //tool tips
             #tt-about {
@@ -298,14 +302,16 @@ nav {
     }
     h1 {
         position: absolute;
-        //width: 20%;
-        float: left;
+        width: 20%;
+        left: 40%;
+        text-align: center;
+        //float: left;
+        //text-align: left;
         top: 50%;
         transform: translateY(-50%);
         margin: 0 10px;
-        text-align: left;
         color: #F7F7F7;
-        font-size: 1.25em;
+        font-size: 1.4em;
         text-transform: uppercase;
         transition: all .4s ease-in-out;
         opacity: 0;
@@ -317,16 +323,18 @@ nav {
     opacity: 0;
     position: absolute;
     width: 10%;
-    margin: 0 45%;
-    font-weight: 700;
+    //margin: 0 45%;
+    //text-align: center;
+    margin: 0 1%;
+    text-align: left;
+    float: left;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
     .responsive-text;
-    font-size: 1.8em;
+    font-size: 1.5em;
     @media @mq-small {
         padding: 10px;
-        margin: 0 40%;
+        //margin: 0 40%;
         &:focus i {
             box-shadow: none;
         }
@@ -339,10 +347,11 @@ section,
 footer {
     width: 100%;
     //min-height: 100%;
-    padding: 30px 0;
+    padding: 60px 0;
     text-align: center;
     .main-sans-font;
     color: #F7F7F7;
+    //color: #222;
     h1 {
         text-transform: uppercase;
         padding: 20px;
@@ -350,9 +359,9 @@ footer {
         font-weight: 700;
     }
     h2 {
-        text-transform: uppercase;
+        //text-transform: uppercase;
         padding: 5px;
-        font-size: 3.8em;
+        font-size: 3em;
     }
     h3 {
         font-size: 2.5em;
@@ -366,37 +375,39 @@ footer {
 
 //section specific
 header {
-    height: 100%;
+    height: 95%;
     background-position: center;
     background-image: url(../../img/background.jpg);
     background-attachment: fixed;
     background-size: cover;
     div {
         margin-top: 10% !important;
-        background: rgba(34, 34, 34, 0.4);
-    }
-    a {
-        position: absolute;
-        width: 10%;
-        left: 45%;
-        //top: 50%;
-        .responsive-text;
-        .fa-circle {
-            color: rgba(34, 34, 34, .3);
-        }
-        .inverse {
+        //background: rgba(34, 34, 34, 0.4);
+        a {
+            //position: relative;
+            width: 10%;
+            font-size: 1.8em;
+            //left: 45%;
+            //top: 50%;
+            /*.inverse {
             color: #ffffff;
-        }
-        i {
-            .trasnsition-short;
-            text-shadow: none;
-        }
-        &:hover i {
-            //text-shadow: 6px 6px 2px #111;
-            transform: scale3d(1.3, 1.3, 1.3);
-        }
-        &:focus {
-            text-shadow: none;
+            background-color: rgba(34, 34, 34, .3);
+            border-radius: 50%;
+
+        }*/
+            i {
+                .transition-short;
+                //text-shadow: none;
+                //.responsive-text;
+            }
+            &:hover i {
+                //text-shadow: 6px 6px 2px #111;
+                transform: scale3d(1.4, 1.4, 1.4);
+                color: #fff;
+            }
+            &:focus {
+                text-shadow: none;
+            }
         }
     }
 }
@@ -405,13 +416,17 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../../img/background-grey.jpg);
+    background-image: url(../../img/background.jpg);//url(../../img/background-grey.jpg);
+    filter: grayscale(100%);
+    color: #222;
+    height: 100%;
     .flex-container {
-        margin: 3% 3% 0 3%;
+        //margin: 3% 3% 0 3%;
         justify-content: space-around;
         div {
             width: 23%;
             min-width: 300px;
+            margin-top: 25px;
             //flex-wrap: nowrap;
         }
         img {
@@ -448,12 +463,21 @@ footer {
     }
     #email {
         margin: 2% 0 2% 0;
+        a {
+            i {
+                .transition-short;
+            }
+            font-size: 1.2em;
+            &:hover i {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+        }
     }
 }
 
 //portfolio images/links
 //class to show project details
-.show-proj-details {
+/*.show-proj-details() {
     &:hover img,
     &:active img {
         opacity: 0.3;
@@ -464,6 +488,18 @@ footer {
     }
     &:hover .img-info-expand,
     &:active .img-info-expand {
+        opacity: 0;
+    }
+}*/
+
+.show-proj-details {
+    img {
+        opacity: 0.3;
+    }
+    .img-text {
+        top: 5%
+    }
+    .img-info-expand {
         opacity: 0;
     }
 }
@@ -511,23 +547,25 @@ footer {
         padding: 0;
         margin: 0;
         position: absolute;
-        width: 11%;
+        width: 13%;
         height: 7%;
         left: 45%;
-        top: -2px;
+        top: -4px;
         .transition-long;
-        .show-proj-details;
+        //.show-proj-details;
+
         i {
             background: #F7F7F7;
             border-radius: 0 0 10px 10px;
             width: 100%;
             height: 100%;
+            padding: 8px 0 0 0;
             box-shadow: 3px 3px 4px 0 rgba(34, 34, 34, .8);
-            font-size: 1.2em;
+            font-size: .9em;
         }
     }
     img {
-        transition: all .4s ease;
+        transition: all .3s ease;
         opacity: 1;
         display: block;
         max-width: 100%;
@@ -536,7 +574,7 @@ footer {
         border-radius: 0;
     }
     .img-text {
-        transition: all .5s ease;
+        transition: all .4s ease;
         position: absolute;
         width: 80%;
         height: 70%;
@@ -566,5 +604,7 @@ footer {
             }
         }
     }
-    .show-proj-details;
+    &:hover, &:active{
+        .show-proj-details;
+    }
 }

@@ -20,12 +20,20 @@ $(document).ready(function () {
         $navHeight = $('.navbar').height();
     });
 
+   /* //info button hover
+    $('.img-info-expand').mouseenter(function() {
+    $( '.img-container img' ).css('opacity','0.3');
+  })
+  .mouseleave(function() {
+    $( '.img-container img' ).css('opacity','1');
+  });*/
+
     //page scroll on nav clicks
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this),
             $offset;
         if ($anchor.attr('href') !== "page-top") {
-            $offset = $navHeight - $(window).height() * 0.03;
+            $offset = $navHeight - $(window).height() * 0.02;
         } else {
             $offset = 0;
         }
@@ -38,24 +46,23 @@ $(document).ready(function () {
 
     //var $oldScrollPos = $(window).scrollTop();
 
+    //change navbar for different sections/scrolling
     $(window).scroll(function () {
 
         var $scrollPos = $(window).scrollTop();
 
         if ($scrollPos < 10) {
             $("nav").css("background-color", "rgba(34, 34, 34, 0.1)");
-
-
-
             $('.navbar-up-home').css('opacity', '0');
+
         }
         if ($scrollPos > 9) {
             $('.navbar-up-home').css('opacity', '1');
 
         }
 
-        if ($scrollPos > 10 && $scrollPos < $sectionContactOffset - $navHeight) {
-            $("nav").css("background-color", "rgba(34, 34, 34, 1)");
+        if ($scrollPos > 10 && $scrollPos < $sectionAboutOffset - $navHeight) {
+            $("nav").css("background-color", "rgba(34, 34, 34, .1)");
             $("nav a").removeClass('nav-a-style-alt nav-a-style-green');
             $('nav h1').css('opacity', '0');
             $('#title-name').css('opacity', '1');
@@ -64,8 +71,6 @@ $(document).ready(function () {
 
         if ($scrollPos > ($sectionContactOffset - $navHeight - 1)) {
             $("[href]").removeClass('nav-active');
-
-
             $("[href='#contact']").addClass('nav-active');
             $("nav").css("background-color", "#FE7251");
             $('nav h1').css('opacity', '0');
@@ -77,13 +82,13 @@ $(document).ready(function () {
         if ($scrollPos < $sectionAboutOffset - $navHeight) {
             $("[href]").removeClass('nav-active');
 
+
         }
         if ($scrollPos > $sectionAboutOffset - $navHeight - 1 && $scrollPos < $sectionPortfolioOffset - $navHeight) {
             $("[href]").removeClass('nav-active');
             $("[href='#about']").addClass('nav-active');
             $("nav").css("background-color", "rgba(34, 34, 34, 1)");
             $("nav a").removeClass('nav-a-style-alt').addClass('nav-a-style-normal');
-
             $('nav h1').css('opacity', '0');
             $('#title-about').css('opacity', '1');
         }
