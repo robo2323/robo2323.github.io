@@ -441,17 +441,21 @@ header {
     }
     .flex-container {
         //margin: 3% 3% 0 3%;
-            background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         color: #222;
         padding-bottom: 55px;
-        padding-top: 55px;
-
+        padding-top: 80px;
         justify-content: space-around;
-        div {
+        div  {
             width: 23%;
             min-width: 300px;
             margin-top: 25px;
             //flex-wrap: nowrap;
+        }
+        table{
+            //width: 23%;
+            min-width: 300px;
+            margin-top: 25px;
         }
         img {
             border-radius: 50%;
@@ -468,7 +472,24 @@ header {
                 text-align: right;
             }
         }
-        #about-skills {
+        #about-skills-div {
+            tr{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            td {
+                padding: 20px 50px 0 50px;
+                p{
+                    font-weight: bold;
+                    width: 220px;
+                    background: @color-light;
+                    color: #f7f7f7;
+                    border-radius: 50px;
+                    margin: 10px;
+                    padding: 10px 15px 12px 15px;
+                }
+            }
             h3 {
                 .center;
             }

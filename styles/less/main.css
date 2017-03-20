@@ -415,13 +415,17 @@ header div a:focus {
   background-color: rgba(255, 255, 255, 0.5);
   color: #222;
   padding-bottom: 55px;
-  padding-top: 55px;
+  padding-top: 80px;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
 #about .flex-container div {
   width: 23%;
+  min-width: 300px;
+  margin-top: 25px;
+}
+#about .flex-container table {
   min-width: 300px;
   margin-top: 25px;
 }
@@ -438,10 +442,35 @@ header div a:focus {
 #about .flex-container #about-info p {
   text-align: right;
 }
-#about .flex-container #about-skills {
+#about .flex-container #about-skills-div {
   text-align: left;
 }
-#about .flex-container #about-skills h3 {
+#about .flex-container #about-skills-div tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#about .flex-container #about-skills-div td {
+  padding: 20px 50px 0 50px;
+}
+#about .flex-container #about-skills-div td p {
+  font-weight: bold;
+  width: 220px;
+  background: #3ab76d;
+  color: #f7f7f7;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px 15px 12px 15px;
+}
+#about .flex-container #about-skills-div h3 {
   text-align: center;
 }
 footer {
