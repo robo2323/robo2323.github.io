@@ -413,11 +413,17 @@ header div a:focus {
 }
 #about .flex-container {
   color: #222;
-  padding-bottom: 55px;
   padding-top: 80px;
+  padding-bottom: 55px;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+@media only screen and (max-width: 460px) {
+  #about .flex-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 #about .flex-container div {
   background-color: rgba(255, 255, 255, 0.3);
@@ -439,6 +445,11 @@ header div a:focus {
   margin-right: 10px;
   height: auto;
   float: left;
+}
+@media only screen and (max-width: 460px) {
+  #about .flex-container #about-info {
+    margin: 0;
+  }
 }
 #about .flex-container #about-info h3 {
   text-align: center;
@@ -472,7 +483,7 @@ header div a:focus {
 #about .flex-container #about-skills-div tr p {
   font-weight: bold;
   width: 220px;
-  background: #444;
+  background: rgba(60, 60, 60, 0.8);
   color: #f7f7f7;
   border-radius: 50px;
   margin: 10px;

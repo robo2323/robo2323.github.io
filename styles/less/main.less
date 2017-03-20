@@ -423,7 +423,6 @@ header {
     filter: grayscale(100%);
     color: #fff;
     padding-top: 0;
-    //#222;
     min-height: 100%;
     a {
         font-size: 2em;
@@ -443,9 +442,13 @@ header {
         //margin: 3% 3% 0 3%;
         //background-color: rgba(255, 255, 255, 0.5);
         color: #222;
-        padding-bottom: 55px;
         padding-top: 80px;
+        padding-bottom: 55px;
         justify-content: space-around;
+        @media @mq-small {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
         div {
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
@@ -469,6 +472,9 @@ header {
             float: left;
         }
         #about-info {
+            @media @mq-small {
+                margin: 0;
+            }
             h3 {
                 text-align: center;
             }
@@ -484,14 +490,14 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-            td {
-                padding: 20px 30px 20px 30px;
-                margin-bottom: 20px;
+                td {
+                    padding: 20px 30px 20px 30px;
+                    margin-bottom: 20px;
                 }
                 p {
                     font-weight: bold;
                     width: 220px;
-                    background: #444;
+                    background: rgba(60, 60, 60, 0.8);
                     color: #f7f7f7;
                     border-radius: 50px;
                     margin: 10px;
