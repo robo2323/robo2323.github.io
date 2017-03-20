@@ -27,8 +27,8 @@ sans-serif;
 @padding-nav-a-large: 16px 30px 16px 30px;
 @padding-nav-a-medium: 16px 15px 16px 15px;
 @padding-nav-a-small: 16px 8px 8px 15px;
-@mq-medium: ~"only screen and (max-width: 950px) and (min-width: 461px)";
-@mq-small: ~"only screen and (max-width: 460px)";
+@mq-medium: ~"only screen and (max-width: 1465px) and (min-width: 678px)";
+@mq-small: ~"only screen and (max-width: 677px)";
 //utility classes
 //js
 //to change hover colors for navbar nav links in each section
@@ -445,15 +445,25 @@ header {
         padding-top: 80px;
         padding-bottom: 55px;
         justify-content: space-around;
+        @media @mq-medium {
+            flex-direction: column;
+            align-items: center;
+        }
         @media @mq-small {
             padding-top: 0;
             padding-bottom: 0;
-        }
+                    }
         div {
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
             padding: 30px;
             width: 23%;
+            @media @mq-medium{
+                width: 70%;
+            }
+            @media @mq-small{
+                width: 90%;
+            }
             min-width: 300px;
             margin-top: 25px;
             //flex-wrap: nowrap;
@@ -463,6 +473,7 @@ header {
             margin-top: 25px;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
+
         }
         img {
             border-radius: 50%;
@@ -490,6 +501,7 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-items: center;
                 td {
                     padding: 20px 30px 20px 30px;
                     margin-bottom: 20px;
@@ -501,7 +513,7 @@ header {
                 p {
                     font-weight: bold;
                     width: 220px;
-                    background: rgba(60, 60, 60, 0.8);
+                    background: rgba(60, 60, 60, 0.9);
                     color: #f7f7f7;
                     border-radius: 50px;
                     margin: 10px;
