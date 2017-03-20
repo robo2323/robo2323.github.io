@@ -480,6 +480,12 @@ header div a:focus {
   padding: 20px 30px 20px 30px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 460px) {
+  #about .flex-container #about-skills-div tr td {
+    padding: 0;
+    margin: 0;
+  }
+}
 #about .flex-container #about-skills-div tr p {
   font-weight: bold;
   width: 220px;
