@@ -412,7 +412,6 @@ header div a:focus {
   text-shadow: none;
 }
 #about .flex-container {
-  background-color: rgba(255, 255, 255, 0.5);
   color: #222;
   padding-bottom: 55px;
   padding-top: 80px;
@@ -421,6 +420,9 @@ header div a:focus {
           justify-content: space-around;
 }
 #about .flex-container div {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px;
   width: 23%;
   min-width: 300px;
   margin-top: 25px;
@@ -428,6 +430,8 @@ header div a:focus {
 #about .flex-container table {
   min-width: 300px;
   margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 #about .flex-container img {
   border-radius: 50%;
@@ -445,6 +449,9 @@ header div a:focus {
 #about .flex-container #about-skills-div {
   text-align: left;
 }
+#about .flex-container #about-skills-div th {
+  padding-top: 30px;
+}
 #about .flex-container #about-skills-div tr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -458,10 +465,11 @@ header div a:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#about .flex-container #about-skills-div td {
-  padding: 20px 50px 0 50px;
+#about .flex-container #about-skills-div tr td {
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 20px;
 }
-#about .flex-container #about-skills-div td p {
+#about .flex-container #about-skills-div tr p {
   font-weight: bold;
   width: 220px;
   background: #444;
