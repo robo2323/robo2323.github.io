@@ -14,11 +14,11 @@
 //@color-alt: #E56149;
 //color-light: #35A85C;
 @color-dark: #222;
-@font-main: 'Open Sans', sans-serif;
-@font-alt: 'Raleway', sans-serif;
-@a-font-size-lg: 1.25vw;
-@a-font-size-md: 2.5vw;
-@a-font-size-sml: 3.5vw;
+@font-main: 'Raleway', sans-serif;
+@font-alt: 'Montserrat', sans-serif;
+@a-font-size-lg: 1vw;
+@a-font-size-md: 2vw;
+@a-font-size-sml: 3vw;
 @padding-nav-a-large: 16px 30px 16px 30px;
 @padding-nav-a-medium: 16px 15px 16px 15px;
 @padding-nav-a-small: 16px 8px 8px 15px;
@@ -155,7 +155,7 @@ hr {
 
 //global elements
 .button {
-  .alt-sans-font;
+  .main-sans-font;
   font-weight: 600;
   text-decoration: none;
   border: 2px solid @color-alt;
@@ -220,7 +220,8 @@ nav {
   width: 100%;
   position: fixed;
   background: rgba(34, 34, 34, 0.1);
-  .alt-sans-font;
+  .main-sans-font;
+  font-weight: bold;
   //font-size: @a-font-size-lg;
   text-transform: uppercase;
   .transition-short;
@@ -438,8 +439,6 @@ header {
     }
   }
   .flex-container {
-    //margin: 3% 3% 0 3%;
-    //background-color: rgba(255, 255, 255, 0.5);
     color: #222;
     padding-top: 80px;
     padding-bottom: 55px;
@@ -451,6 +450,20 @@ header {
     @media @mq-small {
       padding-top: 0;
       padding-bottom: 0;
+    }
+    h2 {
+      .main-sans-font;
+      font-weight: bold;
+      font-size: @a-font-size-sml;
+    }
+    h3 {
+      text-align: center;
+      font-weight: normal;
+    }
+
+    p {
+      text-align: right;
+      .alt-sans-font;
     }
     div {
       background-color: rgba(255, 255, 255, 0.3);
@@ -480,18 +493,28 @@ header {
       height: auto;
       float: left;
     }
-    #about-info {
-      @media @mq-small {
-        margin: 0;
-      }
-      h3 {
-        text-align: center;
+    #about-learning {
+      width: 45%;
+      .learning{
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin:auto;
+        background:rgba(0, 0, 0, 0)
       }
       p {
-        text-align: right;
+        font-weight: bold;
+        width: 220px;
+        background: rgba(60, 60, 60, 0.9);
+        color: #f7f7f7;
+        border-radius: 50px;
+        margin: 15px;
+        padding: 10px 15px 12px 15px;
+        text-align: center;
       }
     }
     #about-skills-div {
+      width: 45%;
       th {
         padding-top: 30px;
       }
@@ -514,7 +537,7 @@ header {
           background: rgba(60, 60, 60, 0.9);
           color: #f7f7f7;
           border-radius: 50px;
-          margin: 10px;
+          margin: 15px;
           padding: 10px 15px 12px 15px;
           text-align: center;
         }
@@ -526,7 +549,22 @@ header {
     }
   }
 }
-
+#about-info {
+  background: rgba(235, 235, 235, 0.9);
+  color: #111;
+  border-radius: 10px;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 45px;
+  padding: 20px;
+  @media @mq-small {
+    margin: 0;
+  }
+  img {
+    border-radius: 50%;
+    margin: 20px;
+  }
+}
 footer {
   min-height: 100%;
   a {
@@ -567,6 +605,10 @@ footer {
     }
 }*/
 
+#portfolio{
+  padding-top:25px;
+}
+
 .show-proj-details {
   img {
     opacity: 0.3;
@@ -589,7 +631,7 @@ footer {
   text-align: right;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-  margin: 0 20px 25px 20px;
+  margin: 30px;
   border-radius: 5px;
   .responsive-text;
   //border: 15px solid rgb(247,247,247);
@@ -599,11 +641,6 @@ footer {
     width: 100%;
     height: 100%;
     top: 10%;
-    a {
-    } // height: 100%;
-    // width: 100%;
-    // position: absolute;
-    // left: 0;
   }
   p {
     font-size: 1.3em;
@@ -668,7 +705,7 @@ footer {
       font-size: @a-font-size-lg;
       &:hover {
         transform: scale(1.15);
-        color: rgb(88, 133, 185);
+        color: rgb(93, 158, 233);
       }
     }
     .fa-check-circle-o {

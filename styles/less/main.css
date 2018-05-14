@@ -68,7 +68,7 @@ hr {
 }
 .button {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-weight: 600;
   text-decoration: none;
   border: 2px solid #e77359;
@@ -78,7 +78,7 @@ hr {
   padding: 15px 30px;
   text-transform: uppercase;
   box-shadow: 0 2px 5px #111;
-  font-size: 1.25vw;
+  font-size: 1vw;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-box-flex: 0;
@@ -86,12 +86,12 @@ hr {
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   .button {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   .button {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 .button:hover {
@@ -115,18 +115,18 @@ hr {
 .container {
   margin: 3% 25% 0 25%;
   width: 50%;
-  font-size: 1.25vw;
+  font-size: 1vw;
   border-radius: 15px;
   padding: 25px 0 25px 0;
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   .container {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   .container {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
@@ -154,7 +154,8 @@ nav {
   position: fixed;
   background: rgba(34, 34, 34, 0.1);
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -165,16 +166,16 @@ nav {
   @media @mq-small{
     font-size: @a-font-size-sml;
   }*/
-  font-size: 1.25vw;
+  font-size: 1vw;
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   nav {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   nav {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 nav .navbar-nav {
@@ -285,17 +286,17 @@ nav h1 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 1.25vw;
+  font-size: 1vw;
   font-size: 1.5em;
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   .navbar-up-home {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   .navbar-up-home {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 @media only screen and (max-width: 677px) {
@@ -312,7 +313,7 @@ footer {
   width: 100%;
   padding: 60px 0;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #f7f7f7;
 }
@@ -420,6 +421,21 @@ header div a:focus {
     padding-bottom: 0;
   }
 }
+#about .flex-container h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-weight: bold;
+  font-size: 3vw;
+}
+#about .flex-container h3 {
+  text-align: center;
+  font-weight: normal;
+}
+#about .flex-container p {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
 #about .flex-container div {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
@@ -451,18 +467,28 @@ header div a:focus {
   height: auto;
   float: left;
 }
-@media only screen and (max-width: 677px) {
-  #about .flex-container #about-info {
-    margin: 0;
-  }
+#about .flex-container #about-learning {
+  width: 45%;
 }
-#about .flex-container #about-info h3 {
+#about .flex-container #about-learning .learning {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background: rgba(0, 0, 0, 0);
+}
+#about .flex-container #about-learning p {
+  font-weight: bold;
+  width: 220px;
+  background: rgba(60, 60, 60, 0.9);
+  color: #f7f7f7;
+  border-radius: 50px;
+  margin: 15px;
+  padding: 10px 15px 12px 15px;
   text-align: center;
 }
-#about .flex-container #about-info p {
-  text-align: right;
-}
 #about .flex-container #about-skills-div {
+  width: 45%;
   text-align: left;
 }
 #about .flex-container #about-skills-div th {
@@ -493,12 +519,30 @@ header div a:focus {
   background: rgba(60, 60, 60, 0.9);
   color: #f7f7f7;
   border-radius: 50px;
-  margin: 10px;
+  margin: 15px;
   padding: 10px 15px 12px 15px;
   text-align: center;
 }
 #about .flex-container #about-skills-div h3 {
   text-align: center;
+}
+#about-info {
+  background: rgba(235, 235, 235, 0.9);
+  color: #111;
+  border-radius: 10px;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 45px;
+  padding: 20px;
+}
+@media only screen and (max-width: 677px) {
+  #about-info {
+    margin: 0;
+  }
+}
+#about-info img {
+  border-radius: 50%;
+  margin: 20px;
 }
 footer {
   min-height: 100%;
@@ -537,6 +581,9 @@ footer #email a:hover i {
         opacity: 0;
     }
 }*/
+#portfolio {
+  padding-top: 25px;
+}
 .show-proj-details img {
   opacity: 0.3;
 }
@@ -556,18 +603,18 @@ footer #email a:hover i {
   text-align: right;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-  margin: 0 20px 25px 20px;
+  margin: 30px;
   border-radius: 5px;
-  font-size: 1.25vw;
+  font-size: 1vw;
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   .img-container {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   .img-container {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 .img-container div {
@@ -635,27 +682,27 @@ footer #email a:hover i {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  font-size: 1.25vw;
+  font-size: 1vw;
 }
 @media only screen and (max-width: 1465px) and (min-width: 678px) {
   .img-container .img-text {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 677px) {
   .img-container .img-text {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 .img-container .img-text a {
   color: #eeeeee;
   text-decoration: none;
-  font-size: 1.25vw;
+  font-size: 1vw;
 }
 .img-container .img-text a:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  color: #5885b9;
+  color: #5d9ee9;
 }
 .img-container .img-text .fa-check-circle-o {
   color: #5885b9;

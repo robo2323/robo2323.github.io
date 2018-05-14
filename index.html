@@ -12,7 +12,7 @@
         Rob Harkness | Portfolio
     </title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i700|Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i700|Raleway:400,600" rel="stylesheet">
 
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,16 +73,25 @@
         </div>
     </header>
     <section id="about" class="page-bg-red">
-        <div class="flex-container">
+        
             <div id="about-info">
-                <img src="img/headshot.jpg" alt="Rob Harkness">
-                <h3>Hi! I'm Rob</h3>
-                <br>
-                <p>I'm a self taught developer. At the moment I specialise in frontend but I'm eagerly learning backend with
-                    the goal of becoming a full-stack developer. Though I wouldn't classify myself as a designer I do have
-                    a strong interest in and an ever growing understanding of UI/UX and design principles which I aim to
-                    have reflected in my work</p>
-            </div>
+                    <img src="img/headshot.jpg" alt="Rob Harkness">
+                    <h2>Hi! I'm Rob</h2>
+                    <br>
+                    <p>After discovering a passion for coding and web development I went about teaching myself front-end development
+                        over a couple of years as a hobby. Eventually I decided to take the plunge, take an immersive course
+                        at General Assembly and set myself up for a great new journey. </p>
+                        <br>
+                        <p>Continually learning and developing my
+                        skills gives me a deep sense of achievement and satisfaction and I learn best when I am driven by a genuine
+                        passion for what I am learning. The continual stream of challenges presented by coding and development
+                        scratches the problem solving part of my brain in just the right way. With the life-long scope for learning
+                        that the software industry presents I see a bright future for myself within it and I am excited and eager
+                        to start this fantastic journey. </p>
+                </div>
+
+        <div class="flex-container">
+            
             <table id="about-skills-div">
 
                 <th colspan="2">
@@ -156,15 +165,18 @@
             <div id="about-learning">
                 <h2>Currently Learning</h2>
                 <br>
-                <h3>GraphQL</h3>
-                <br>
-                <h3>Firebase</h3>
-                <br>
-                <h3>VUE.js</h3>
-                <br>
-                <h3>THREE.js</h3>
-                <br>
-                <h3>D3.js</h3>
+                <div class="learning">
+                    <p>GraphQL</p>
+                    <br>
+                    <p>Firebase</p>
+                    <br>
+                    <p>VUE.js</p>
+                    <br>
+                    <p>THREE.js</p>
+                    <br>
+                    <p>D3.js</p>
+                    
+                </div>
 
             </div>
 
@@ -176,11 +188,80 @@
 
     <section id="portfolio" class="page-bg-white">
         <div class="flex-container">
+
+            <div class="img-container">
+                <img src="img/boids.jpg">
+
+                <div class="img-text">
+                    <a href="https://robo2323.github.io/flocking-simulation-boids" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/flocking-simulation-boids" target="_blank">GitHub</a>
+
+                </div>
+
+                <p>
+                    <i class="fa fa-file-code-o fa-2x fa-pull-left"></i>Personal interest project: Artificial life, flocking/swarming simulator "Boids"</p>
+
+            </div>
+
+            <div class="img-container">
+                <img src="img/simon.jpg">
+
+                <div class="img-text">
+                    <a href="https://robo2323.github.io/FCC_Simon-Game" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/FCC_Simon-Game" target="_blank">GitHub</a>
+                </div>
+
+                <p>
+                    <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>FreeCodeCamp project: Simon Game</p>
+
+            </div>
+
+            <div class="img-container">
+                <img src="img/cocanvas.png">
+
+                <div class="img-text">
+                    <a href="https://co-canvas.herokuapp.com/" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/cocanvas/cocanvas" target="_blank">GitHub</a>
+                </div>
+
+                <p>
+                    <i class="fa fa-file-code-o fa-2x fa-pull-left"></i>Co-Canvas - real-time collaborative 8 -bit art: General Assembly Group Project</p>
+
+            </div>
+            <div class="img-container">
+                <img src="img/battleships.png">
+
+                <div class="img-text">
+                    <a href="https://robo2323.github.io/battleships" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/battleships" target="_blank">GitHub</a>
+                </div>
+
+                <p>
+                    <i class="fa fa-file-code-o fa-2x fa-pull-left"></i>General Assembly Project-0: Classic Battleships Game</p>
+
+            </div>
+
+
             <div class="img-container">
                 <img src="img/tictactoe.jpg">
 
                 <div class="img-text">
-                    <a href="https://robo2323.github.io/tic-tac-toe" target="_blank">Live Demo</a><span><p>|</p></span>
+                    <a href="https://robo2323.github.io/tic-tac-toe" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
                     <a href="https://github.com/robo2323/tic-tac-toe" target="_blank">GitHub</a>
                 </div>
 
@@ -191,14 +272,35 @@
 
             </div>
 
+
+
+            <div class="img-container">
+                <img src="img/genart.png">
+
+                <div class="img-text">
+                    <a href="https://gen-art.herokuapp.com/presets/36" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/GnArt" target="_blank">GitHub</a>
+                </div>
+
+                <p>
+                    <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>Generative art using p5.js with a backend CRUD system in Rails</p>
+
+            </div>
+
             <div class="img-container">
                 <img src="img/calculator.jpg">
 
                 <div class="img-text">
-                        <a href="https://robo2323.github.io/calculator" target="_blank">Live Demo</a><span><p>|</p></span>
-                        <a href="https://github.com/robo2323/calculator" target="_blank">GitHub</a>
+                    <a href="https://robo2323.github.io/calculator" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/calculator" target="_blank">GitHub</a>
                 </div>
-          
+
                 <p>
                     <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>FreeCodeCamp project: CSS/LESS styled calculator</p>
 
@@ -206,10 +308,13 @@
 
             <div class="img-container">
                 <img src="img/weatherapp.jpg">
-            
+
                 <div class="img-text">
-                        <a href="https://robo2323.github.io/local-weather" target="_blank">Live Demo</a><span><p>|</p></span>
-                        <a href="https://github.com/robo2323/local-weather" target="_blank">GitHub</a>
+                    <a href="https://robo2323.github.io/local-weather" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/local-weather" target="_blank">GitHub</a>
                 </div>
                 <p>
                     <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>FreeCodeCamp project: Weather WebApp using Dark Sky Api </p>
@@ -218,44 +323,22 @@
 
             <div class="img-container">
                 <img src="img/pomodoro.jpg">
-                
+
                 <div class="img-text">
-                        <a href="https://robo2323.github.io/pomodoro-timer" target="_blank">Live Demo</a><span><p>|</p></span>
-                        <a href="https://github.com/robo2323/pomodoro-timer" target="_blank">GitHub</a>
+                    <a href="https://robo2323.github.io/pomodoro-timer" target="_blank">Live Demo</a>
+                    <span>
+                        <p>|</p>
+                    </span>
+                    <a href="https://github.com/robo2323/pomodoro-timer" target="_blank">GitHub</a>
 
                 </div>
-                
+
                 <p>
                     <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>FreeCodeCamp project: Pomodoro style timer with SVG animations</p>
 
             </div>
 
-            <div class="img-container">
-                <img src="img/boids.jpg">
-               
-                <div class="img-text">
-                        <a href="https://robo2323.github.io/flocking-simulation-boids" target="_blank">Live Demo</a><span><p>|</p></span>
-                        <a href="https://github.com/robo2323/flocking-simulation-boids" target="_blank">GitHub</a>
 
-                </div>
-               
-                <p>
-                    <i class="fa fa-file-code-o fa-2x fa-pull-left"></i>Personal interest project: Artificial life, flocking/swarming simulator "Boids"</p>
-
-            </div>
-
-            <div class="img-container">
-                <img src="img/simon.jpg">
-               
-                <div class="img-text">
-                        <a href="https://robo2323.github.io/FCC_Simon-Game" target="_blank">Live Demo</a><span><p>|</p></span>
-                        <a href="https://github.com/robo2323/FCC_Simon-Game" target="_blank">GitHub</a>
-                </div>
-           
-                <p>
-                    <i class="fa fa-free-code-camp fa-2x fa-pull-left"></i>FreeCodeCamp project: Simon Game</p>
-
-            </div>
 
         </div>
     </section>
