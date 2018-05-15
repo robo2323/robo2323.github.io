@@ -22,15 +22,15 @@
 @padding-nav-a-large: 16px 30px 16px 30px;
 @padding-nav-a-medium: 16px 15px 16px 15px;
 @padding-nav-a-small: 16px 8px 8px 15px;
-@mq-medium: ~'only screen and (max-width: 1465px) and (min-width: 678px)';
-@mq-small: ~'only screen and (max-width: 677px)';
+@mq-medium: ~'only screen and (max-width: 1500px) and (min-width: 1000px)';
+@mq-small: ~'only screen and (max-width: 659px)';
 //utility classes
 //js
 //to change hover colors for navbar nav links in each section
 .responsive-text() {
   font-size: @a-font-size-lg;
   @media @mq-medium {
-    font-size: @a-font-size-md;
+    font-size: 1.5em;
   }
   @media @mq-small {
     font-size: @a-font-size-sml;
@@ -196,8 +196,8 @@ hr {
   width: 50%;
   .responsive-text;
   @media @mq-medium {
-    width: 100%;
-    margin: 0;
+    width: 75%;
+    margin: 0 auto;
   }
   @media @mq-small {
     width: 100%;
@@ -220,6 +220,10 @@ nav {
   width: 100%;
   position: fixed;
   background: rgba(34, 34, 34, 0.1);
+  @media only screen and (max-width: 1000px) {
+    background: rgba(34, 34, 34, 1);
+  }
+
   .main-sans-font;
   font-weight: bold;
   //font-size: @a-font-size-lg;
@@ -239,6 +243,11 @@ nav {
     list-style-type: none;
     margin: 0;
     //padding: .6% 0 0 0;
+    @media only screen and (max-width: 1000px) {
+      margin: 0 25%;
+      float: none;
+      width: 100%;
+    }
     ul {
       .vertical-center;
     }
@@ -304,8 +313,8 @@ nav {
     position: absolute;
     width: 20%;
     left: 40%;
-    @media @mq-small {
-      left: 25%;
+    @media only screen and (max-width: 900px) {
+      display: none;
     }
     text-align: center;
     //float: left;
@@ -443,8 +452,9 @@ header {
     padding-top: 80px;
     padding-bottom: 55px;
     justify-content: space-around;
+
     @media @mq-medium {
-      flex-direction: column;
+      // flex-direction: column;
       align-items: center;
     }
     @media @mq-small {
@@ -471,7 +481,7 @@ header {
       padding: 30px;
       width: 23%;
       @media @mq-medium {
-        width: 70%;
+        width: 80%;
       }
       @media @mq-small {
         width: 90%;
@@ -495,12 +505,20 @@ header {
     }
     #about-learning {
       width: 45%;
+      @media @mq-small {
+        width: 100%;
+      }
       .learning {
         display: flex;
         flex-wrap: wrap;
-
+        justify-content: center;
         margin: auto;
         background: rgba(0, 0, 0, 0);
+        @media @mq-small {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+        }
       }
       p {
         font-weight: bold;
@@ -508,13 +526,16 @@ header {
         background: rgba(60, 60, 60, 0.9);
         color: #f7f7f7;
         border-radius: 50px;
-        margin: 15px;
+        margin: 8px;
         padding: 10px 15px 12px 15px;
         text-align: center;
       }
     }
     #about-skills-div {
       width: 45%;
+      @media @mq-small {
+        width: 100%;
+      }
       th {
         padding-top: 30px;
       }
@@ -526,9 +547,13 @@ header {
         td {
           padding: 20px 30px 20px 30px;
           margin-bottom: 20px;
-          @media @mq-small {
+          @media @mq-medium {
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
           }
         }
         p {
@@ -557,10 +582,10 @@ header {
   margin: 0 auto;
   line-height: 42px;
   padding: 20px;
-
   @media @mq-small {
-    margin: 0;
+    width: 100%;
   }
+
   img {
     border-radius: 50%;
     margin: 20px;
@@ -644,7 +669,7 @@ footer {
     top: 10%;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 4px 8px 8px 8px;
   }
   strong {

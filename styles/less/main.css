@@ -84,12 +84,12 @@ hr {
   -webkit-box-flex: 0;
           flex: 0 0 auto;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .button {
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .button {
     font-size: 3vw;
   }
@@ -119,23 +119,23 @@ hr {
   border-radius: 15px;
   padding: 25px 0 25px 0;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .container {
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .container {
     font-size: 3vw;
   }
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .container {
-    width: 100%;
-    margin: 0;
+    width: 75%;
+    margin: 0 auto;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .container {
     width: 100%;
     margin: 0;
@@ -168,12 +168,17 @@ nav {
   }*/
   font-size: 1vw;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1000px) {
   nav {
-    font-size: 2vw;
+    background: #222222;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
+  nav {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 659px) {
   nav {
     font-size: 3vw;
   }
@@ -182,6 +187,13 @@ nav .navbar-nav {
   float: right;
   list-style-type: none;
   margin: 0;
+}
+@media only screen and (max-width: 1000px) {
+  nav .navbar-nav {
+    margin: 0 25%;
+    float: none;
+    width: 100%;
+  }
 }
 nav .navbar-nav ul {
   position: relative;
@@ -242,12 +254,12 @@ nav .navbar-nav a p::before {
   border-style: solid;
   border-color: transparent transparent #fff transparent;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   nav .navbar-nav a {
     padding: 16px 15px 16px 15px;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   nav .navbar-nav a {
     padding: 16px 8px 8px 15px;
   }
@@ -271,9 +283,9 @@ nav h1 {
   transition: all 0.4s ease-in-out;
   opacity: 0;
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 900px) {
   nav h1 {
-    left: 25%;
+    display: none;
   }
 }
 .navbar-up-home {
@@ -289,17 +301,17 @@ nav h1 {
   font-size: 1vw;
   font-size: 1.5em;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .navbar-up-home {
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .navbar-up-home {
     font-size: 3vw;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .navbar-up-home {
     padding: 10px;
   }
@@ -406,16 +418,13 @@ header div a:focus {
   padding-bottom: 55px;
   justify-content: space-around;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   #about .flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
     -webkit-box-align: center;
             align-items: center;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   #about .flex-container {
     padding-top: 0;
     padding-bottom: 0;
@@ -444,12 +453,12 @@ header div a:focus {
   min-width: 300px;
   margin-top: 25px;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   #about .flex-container div {
-    width: 70%;
+    width: 80%;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   #about .flex-container div {
     width: 90%;
   }
@@ -470,12 +479,26 @@ header div a:focus {
 #about .flex-container #about-learning {
   width: 45%;
 }
+@media only screen and (max-width: 659px) {
+  #about .flex-container #about-learning {
+    width: 100%;
+  }
+}
 #about .flex-container #about-learning .learning {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
   margin: auto;
   background: rgba(0, 0, 0, 0);
+}
+@media only screen and (max-width: 659px) {
+  #about .flex-container #about-learning .learning {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 }
 #about .flex-container #about-learning p {
   font-weight: bold;
@@ -483,13 +506,18 @@ header div a:focus {
   background: rgba(60, 60, 60, 0.9);
   color: #f7f7f7;
   border-radius: 50px;
-  margin: 15px;
+  margin: 8px;
   padding: 10px 15px 12px 15px;
   text-align: center;
 }
 #about .flex-container #about-skills-div {
   width: 45%;
   text-align: left;
+}
+@media only screen and (max-width: 659px) {
+  #about .flex-container #about-skills-div {
+    width: 100%;
+  }
 }
 #about .flex-container #about-skills-div th {
   padding-top: 30px;
@@ -507,10 +535,16 @@ header div a:focus {
   padding: 20px 30px 20px 30px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   #about .flex-container #about-skills-div tr td {
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+            justify-content: center;
   }
 }
 #about .flex-container #about-skills-div tr p {
@@ -535,9 +569,9 @@ header div a:focus {
   line-height: 42px;
   padding: 20px;
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   #about-info {
-    margin: 0;
+    width: 100%;
   }
 }
 #about-info img {
@@ -604,12 +638,12 @@ footer #email a:hover i {
   border-radius: 5px;
   font-size: 1vw;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .img-container {
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .img-container {
     font-size: 3vw;
   }
@@ -621,7 +655,7 @@ footer #email a:hover i {
   top: 10%;
 }
 .img-container p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 4px 8px 8px 8px;
 }
 .img-container strong {
@@ -661,12 +695,12 @@ footer #email a:hover i {
   -ms-transform: translate(-50%, 0);
   font-size: 1vw;
 }
-@media only screen and (max-width: 1465px) and (min-width: 678px) {
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
   .img-container .img-text {
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 659px) {
   .img-container .img-text {
     font-size: 3vw;
   }
