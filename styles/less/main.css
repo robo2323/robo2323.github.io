@@ -190,9 +190,10 @@ nav .navbar-nav {
 }
 @media only screen and (max-width: 1000px) {
   nav .navbar-nav {
-    margin: 0 25%;
+    margin: 0 12%;
     float: none;
     width: 100%;
+    font-size: 1.2em;
   }
 }
 nav .navbar-nav ul {
@@ -572,6 +573,7 @@ header div a:focus {
 @media only screen and (max-width: 659px) {
   #about-info {
     width: 100%;
+    padding: 0;
   }
 }
 #about-info img {
