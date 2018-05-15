@@ -173,6 +173,13 @@ nav {
     background: #222222;
   }
 }
+@media only screen and (max-width: 659px) {
+  nav {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @media only screen and (max-width: 1500px) and (min-width: 1000px) {
   nav {
     font-size: 1.5em;
@@ -190,9 +197,6 @@ nav .navbar-nav {
 }
 @media only screen and (max-width: 1000px) {
   nav .navbar-nav {
-    margin: 0 12%;
-    float: none;
-    width: 100%;
     font-size: 1.2em;
   }
 }
@@ -257,7 +261,7 @@ nav .navbar-nav a p::before {
 }
 @media only screen and (max-width: 1500px) and (min-width: 1000px) {
   nav .navbar-nav a {
-    padding: 16px 15px 16px 15px;
+    padding: 20px 10px;
   }
 }
 @media only screen and (max-width: 659px) {
@@ -284,7 +288,7 @@ nav h1 {
   transition: all 0.4s ease-in-out;
   opacity: 0;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   nav h1 {
     display: none;
   }
@@ -314,10 +318,7 @@ nav h1 {
 }
 @media only screen and (max-width: 659px) {
   .navbar-up-home {
-    padding: 10px;
-  }
-  .navbar-up-home:focus i {
-    box-shadow: none;
+    display: none;
   }
 }
 header,
@@ -634,6 +635,7 @@ footer #email a:hover i {
   color: #222;
   font-weight: 700;
   text-align: right;
+  line-height: 35px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 30px;
@@ -657,7 +659,7 @@ footer #email a:hover i {
   top: 10%;
 }
 .img-container p {
-  font-size: 1.1em;
+  font-size: 1em;
   padding: 4px 8px 8px 8px;
 }
 .img-container strong {
@@ -711,6 +713,11 @@ footer #email a:hover i {
   color: #eeeeee;
   text-decoration: none;
   font-size: 1.4em;
+}
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
+  .img-container .img-text a {
+    font-size: 0.8em;
+  }
 }
 .img-container .img-text a:hover {
   -webkit-transform: scale(1.1);

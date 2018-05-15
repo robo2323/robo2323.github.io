@@ -20,7 +20,7 @@
 @a-font-size-md: 2vw;
 @a-font-size-sml: 3vw;
 @padding-nav-a-large: 16px 30px 16px 30px;
-@padding-nav-a-medium: 16px 15px 16px 15px;
+@padding-nav-a-medium: 20px 10px;
 @padding-nav-a-small: 16px 8px 8px 15px;
 @mq-medium: ~'only screen and (max-width: 1500px) and (min-width: 1000px)';
 @mq-small: ~'only screen and (max-width: 659px)';
@@ -223,7 +223,10 @@ nav {
   @media only screen and (max-width: 1000px) {
     background: rgba(34, 34, 34, 1);
   }
-
+  @media @mq-small {
+    display: flex;
+    justify-content: space-around;
+  }
   .main-sans-font;
   font-weight: bold;
   //font-size: @a-font-size-lg;
@@ -244,11 +247,11 @@ nav {
     margin: 0;
     //padding: .6% 0 0 0;
     @media only screen and (max-width: 1000px) {
-      margin: 0 12%;
-      float: none;
-      width: 100%;
+      // float: none;
+
       font-size: 1.2em;
     }
+
     ul {
       .vertical-center;
     }
@@ -301,6 +304,7 @@ nav {
       }
       @media @mq-medium {
         padding: @padding-nav-a-medium;
+      
       }
       @media @mq-small {
         padding: @padding-nav-a-small;
@@ -314,7 +318,7 @@ nav {
     position: absolute;
     width: 20%;
     left: 40%;
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       display: none;
     }
     text-align: center;
@@ -346,11 +350,7 @@ nav {
   .responsive-text;
   font-size: 1.5em;
   @media @mq-small {
-    padding: 10px;
-    //margin: 0 40%;
-    &:focus i {
-      box-shadow: none;
-    }
+    display: none;
   }
 }
 
@@ -657,6 +657,7 @@ footer {
   color: @color-dark;
   font-weight: 700;
   text-align: right;
+  line-height: 35px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   margin: 30px;
@@ -671,7 +672,7 @@ footer {
     top: 10%;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 4px 8px 8px 8px;
   }
   strong {
@@ -731,6 +732,9 @@ footer {
       color: rgb(238, 238, 238);
       text-decoration: none;
       font-size: 1.4em;
+      @media @mq-medium {
+        font-size: 0.8em;
+      }
       &:hover {
         transform: scale(1.1);
         color: rgb(93, 158, 233);
