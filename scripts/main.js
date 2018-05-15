@@ -42,7 +42,7 @@ $(document).ready(function() {
           scrollTop: $($anchor.attr('href')).offset().top - $offset
         },
         1200,
-        'easeInOutQuint'
+        'easeInOutQuart'
       );
     event.preventDefault();
   });
@@ -71,7 +71,7 @@ $(document).ready(function() {
     if ($scrollPos > $sectionContactOffset - $navHeight - 1) {
       $('[href]').removeClass('nav-active');
       $("[href='#contact']").addClass('nav-active');
-      $('nav').css('background-color', 'rgb(231, 115, 89)')//'#FE7251');
+      $('nav').css('background-color', 'rgb(88, 133, 185)')//'#FE7251');
       $('nav h1').css('opacity', '0');
       $('#title-contact').css('opacity', '1');
       $('nav a')
@@ -94,7 +94,7 @@ $(document).ready(function() {
     if ($scrollPos > $sectionPortfolioOffset - $navHeight - 1 && $scrollPos < $sectionContactOffset - $navHeight - 1) {
       $('[href]').removeClass('nav-active');
       $("[href='#portfolio']").addClass('nav-active');
-      $('nav').css('background-color', 'rgb(88, 133, 185)');//'#3AB76D');
+      $('nav').css('background-color', 'rgb(231, 115, 89)');//'#3AB76D');
       $('nav h1').css('opacity', '0');
       $('#title-portfolio').css('opacity', '1');
       $('nav a')
